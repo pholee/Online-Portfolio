@@ -1,0 +1,10 @@
+:root {
+    /*Colours*/
+    --color-text: #000000;
+    --color-bg: #fff;
+    --color-accent: #BBCFE1;
+
+    /*Fonts*/
+    --font-roboto: "Roboto";
+    --font-raleway: "Raleway";
+}
