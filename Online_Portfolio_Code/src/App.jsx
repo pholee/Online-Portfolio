@@ -1,12 +1,15 @@
-import styles from './App.module.css'
+import "./App.css";
+import "./index.css";
+import { useState } from "react";
+import { LoadingScreen } from "./components/LoadingScreen";
 
 function App() {
-
+  const [isLoaded, setIsLoaded] = useState(false)
   return (
-    <div className={styles.App}>
-      Hello world
-    </div>
+    <>
+      {!isLoaded && <LoadingScreen onComplete={() => setIsLoaded(true)}/>}
+    </>
   )
 }
 
-export default App
+export default App;
