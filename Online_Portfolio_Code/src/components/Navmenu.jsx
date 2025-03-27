@@ -9,10 +9,6 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
     <nav className="fixed top-0 w-full z-40 bg-[rgba(255,255,255,0.8)] border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <a href="#about" className="text-xl font-bold">
-            phoebe<span className="text-blue-500">.tech</span>
-          </a>
 
           {/* Mobile */}
           <div
