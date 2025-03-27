@@ -6,13 +6,9 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(255,255,255,0.8)] border-white/10 shadow-lg">
-      <div className="max-w-5xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
-          {/* Logo */}
-          <a href="#about" className="text-xl font-bold">
-            phoebe<span className="text-blue-500">.tech</span>
-          </a>
+    <nav className="fixed top-0 right-0 w-full z-40">
+      <div className="max-w-5xl mx-auto p-4">
+        <div className="flex flex-col items-end space-y-4">
 
           {/* Mobile */}
           <div
@@ -23,7 +19,8 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
           </div>
 
           {/* Desktop */}
-          <div className="hidden md:flex items-center gap-8">
+          <div className="hidden md:flex flex-col items-end gap-1">
+          <hr className="w-48 border-black mb-2" />
           <a
               href="#home"
               className="text-gray-600 hover:text-black transition-colors"
