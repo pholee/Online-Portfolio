@@ -6,7 +6,7 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
   }, [menuOpen]);
 
   return (
-    <nav className="fixed top-0 w-full z-40 bg-[rgba(255,255,255,0.8)] backdrop-blur-lg border-white/10 shadow-lg">
+    <nav className="fixed top-0 w-full z-40 bg-[rgba(255,255,255,0.8)] border-white/10 shadow-lg">
       <div className="max-w-5xl mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -24,6 +24,12 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
 
           {/* Desktop */}
           <div className="hidden md:flex items-center gap-8">
+          <a
+              href="#home"
+              className="text-gray-600 hover:text-black transition-colors"
+            >
+              Home
+            </a>
             <a
               href="#about"
               className="text-gray-600 hover:text-black transition-colors"

@@ -22,6 +22,19 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
       </button>
 
       <a
+        href="#home"
+        className={`text-2xl text-black my-4 transform transition-transform duration-300
+                ${
+                  menuOpen
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 translate-y-5"
+                }
+            `}
+        onClick={() => setMenuOpen(false)}
+      >
+        Home
+      </a>
+      <a
         href="#about"
         className={`text-2xl text-black my-4 transform transition-transform duration-300
                 ${
