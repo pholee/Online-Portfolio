@@ -5,6 +5,14 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
 
+  {/* Scroll on click */}
+  const scrollToSection = (id) => {
+    const section = document.querySelector(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <nav className="fixed top-0 right-0 w-full z-40">
       <div className="max-w-5xl mx-auto p-4">
@@ -22,25 +30,25 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
           <div className="hidden md:flex flex-col items-end gap-1">
           <hr className="w-48 border-black mb-2" />
           <a
-              href="#home"
+              onClick={() => scrollToSection("#home")}
               className="text-gray-600 hover:text-black transition-colors"
             >
               Home
             </a>
             <a
-              href="#about"
+              onClick={() => scrollToSection("#about")}
               className="text-gray-600 hover:text-black transition-colors"
             >
               About
             </a>
             <a
-              href="#projects"
+              onClick={() => scrollToSection("#projects")}
               className="text-gray-600 hover:text-black transition-colors"
             >
               Projects
             </a>
             <a
-              href="#contact"
+              onClick={() => scrollToSection("#contact")}
               className="text-gray-600 hover:text-black transition-colors"
             >
               Contact
