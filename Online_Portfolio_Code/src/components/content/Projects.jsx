@@ -2,18 +2,17 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Projects = () => {
     return (
-      <section
-        id="projects"
-        className="min-h-screen flex items-center justify-center py-20"
-      >
+      <section id="projects" className="min-h-screen p-8">
         <RevealOnScroll>
-          <div className="max-w-5xl mx-auto px-4">
-            <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 bg-clip-text text-transparent to-cyan-400 text-center">
+          <div className="max-w-6xl mx-auto">
+            {/* Heading */}
+            <h2 className="text-2xl font-bold mb-8">
+              <span className="w-3 h-3 bg-black inline-block mr-4"></span>
               Featured Projects
             </h2>
 
             {/* Projects grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {/* 1 */}
               <div className="p-6 rounded-xl border border-black/10 hover:-translate-y-1 hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
                 <h3 className="text-xl font-bold mb-2"> Processing App </h3>
@@ -103,6 +102,8 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
+
+            {/* View all button soon*/}
           </div>
         </RevealOnScroll>
       </section>

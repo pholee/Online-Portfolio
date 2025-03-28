@@ -59,7 +59,7 @@ export const Home = () => {
           </p>
 
           {/* Divider */}
-          <hr className="w-full border-black mb-2" />
+          <hr className="w-full border-black mb-10" />
         </div>
       </RevealOnScroll>
     </section>
