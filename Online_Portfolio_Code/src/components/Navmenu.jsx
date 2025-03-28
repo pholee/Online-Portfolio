@@ -11,6 +11,7 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
     if (section) {
       section.scrollIntoView({ behavior: "smooth" });
     }
+    setMenuOpen(false); // Close menu after clicking a link
   };
 
   return (
@@ -19,17 +20,19 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
         <div className="flex flex-col items-end space-y-4">
 
           {/* Mobile */}
-          <div
-            className="w-7 h-5 relative cursor-pointer z-40 md:hidden"
-            onClick={() => setMenuOpen((prev) => !prev)}
-          >
-            &#9776;
-          </div>
+          {!menuOpen && (
+            <div
+              className="top-2 right-2 relative cursor-pointer z-40 md:hidden font-bold text-2xl"
+              onClick={() => setMenuOpen(true)}
+            >
+              &#9776;
+            </div>
+          )}
 
           {/* Desktop */}
           <div className="hidden md:flex flex-col items-end gap-1">
-          <hr className="w-48 border-black mb-2" />
-          <a
+            <hr className="w-48 border-black mb-2" />
+            <a
               onClick={() => scrollToSection("#home")}
               className="text-gray-600 hover:text-black transition-colors"
             >
@@ -66,3 +69,4 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
     </nav>
   );
 };
+

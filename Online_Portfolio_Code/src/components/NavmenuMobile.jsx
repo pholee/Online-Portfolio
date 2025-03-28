@@ -1,6 +1,16 @@
 import { useEffect } from "react";
 
 export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
+
+    {/* Scroll on click */}
+    const scrollToSection = (id) => {
+      const section = document.querySelector(id);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+      setMenuOpen(false); // Close menu after clicking a link
+    };
+
   return (
     <div
       className={`
@@ -22,7 +32,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
       </button>
 
       <a
-        href="#home"
+        onClick={() => scrollToSection("#home")}
         className={`text-2xl text-black my-4 transform transition-transform duration-300
                 ${
                   menuOpen
@@ -30,12 +40,11 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
                     : "opacity-0 translate-y-5"
                 }
             `}
-        onClick={() => setMenuOpen(false)}
       >
         Home
       </a>
       <a
-        href="#about"
+        onClick={() => scrollToSection("#about")}
         className={`text-2xl text-black my-4 transform transition-transform duration-300
                 ${
                   menuOpen
@@ -43,12 +52,11 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
                     : "opacity-0 translate-y-5"
                 }
             `}
-        onClick={() => setMenuOpen(false)}
       >
         About
       </a>
       <a
-        href="#projects"
+        onClick={() => scrollToSection("#projects")}
         className={`text-2xl text-black my-4 transform transition-transform duration-300
             ${
               menuOpen
@@ -56,12 +64,11 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
                 : "opacity-0 translate-y-5"
             }
         `}
-        onClick={() => setMenuOpen(false)}
       >
         Projects
       </a>
       <a
-        href="#contact"
+        onClick={() => scrollToSection("#contact")}
         className={`text-2xl text-black my-4 transform transition-transform duration-300
             ${
               menuOpen
@@ -69,7 +76,6 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
                 : "opacity-0 translate-y-5"
             }
         `}
-        onClick={() => setMenuOpen(false)}
       >
         Contact
       </a>
