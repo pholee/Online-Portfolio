@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
 
     {/* Scroll on click */}
@@ -8,7 +6,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
       if (section) {
         section.scrollIntoView({ behavior: "smooth" });
       }
-      setMenuOpen(false); // Close menu after clicking a link
+      setMenuOpen(false);
     };
 
   return (
@@ -24,7 +22,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
                 `}
     >
       <button
-        className="absolute top-6 right-6 text-black text-3xl focus:outline-none cursor-pointer"
+        className="absolute top-8 right-8.5 text-black text-3xl focus:outline-none cursor-pointer"
         onClick={() => setMenuOpen(false)}
         aria-label="Close menu"
       >

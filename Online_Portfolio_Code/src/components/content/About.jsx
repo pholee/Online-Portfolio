@@ -15,13 +15,13 @@ export const About = () => {
             About me
           </h2>
 
-          <div className="rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+          <div className="rounded-xl p-8 border-blue/10 border hover:-translate-y-1 transition-all">
             <p className="text-gray-600 mb-6">
               Blah blah blah blah blah blah blah
             </p>
 
-            {/* Frontend skills */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                {/* Frontend skills */}
               <div className="rounded-xl p-6 hover:translate-y-1 transition-all">
                 <h3 className="text-xl font-bold mb-4">Frontend</h3>
                 <div className="flex flex-wrap gap-2">
