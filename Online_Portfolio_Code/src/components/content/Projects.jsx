@@ -3,6 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const Projects = () => {
     return (
       <section id="projects" className="min-h-screen p-8">
+        
         <RevealOnScroll>
           <div className="max-w-6xl mx-auto">
             {/* Heading */}

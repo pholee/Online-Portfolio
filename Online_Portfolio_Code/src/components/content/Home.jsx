@@ -3,6 +3,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const Home = () => {
   return (
     <section id="home" className="min-h-screen p-8">
+      
       <RevealOnScroll>
         {/* Background */}
         <div className="absolute top-1/3 right-1/16 w-150 h-150 bg-blue-200 rounded-full blur-2xl opacity-700 -z-10"></div>
