@@ -29,11 +29,11 @@ export const About = () => {
 
   return (
     <section id="about" className="min-h-screen p-8">
-      
+
       <RevealOnScroll>
-        <div className="max-w-3xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
           {/* Heading */}
-          <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 bg-clip-text text-transparent to-cyan-400 text-center">
+          <h2 className="text-3xl font-bold mb-8">
             About me
           </h2>
 
@@ -48,7 +48,7 @@ export const About = () => {
               {/* Skills grid*/}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {/* Frontend skills */}
-                <div className="rounded-xl p-6 hover:translate-y-1 transition-all">
+                <div className="rounded-xl p-6">
                   <h3 className="text-xl font-bold mb-4">Frontend</h3>
                   <div className="flex flex-wrap gap-2">
                     {frontendSkills.map((tech, key) => (
@@ -62,7 +62,7 @@ export const About = () => {
                   </div>
                 </div>
                 {/* Backend skills */}
-                <div className="rounded-xl p-6 hover:translate-y-1 transition-all">
+                <div className="rounded-xl p-6">
                   <h3 className="text-xl font-bold mb-4">Backend</h3>
                   <div className="flex flex-wrap gap-2">
                     {backendSkills.map((tech, key) => (
@@ -115,6 +115,7 @@ export const About = () => {
           </div>
         </div>
       </RevealOnScroll>
+
     </section>
   );
 };

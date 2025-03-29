@@ -1,6 +1,7 @@
 import "./App.css";
 import "./index.css";
-import { useState } from "react";
+import Lenis from "lenis";
+import { useEffect, useState } from "react";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { Navmenu } from "./components/Navmenu";
 import { NavmenuMobile } from "./components/NavmenuMobile";
@@ -12,6 +13,15 @@ import { Contact } from "./components/content/Contact";
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+
+  useEffect( () => {
+    const lenis = new Lenis()
+    function raf(time) {
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
+    requestAnimationFrame(raf)
+  }, [])
 
   return (
     <>

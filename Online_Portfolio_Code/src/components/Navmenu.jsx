@@ -30,35 +30,37 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
 
           {/* Desktop */}
           <div className="hidden md:flex flex-col items-end">
+            
+            {/* Divider */}
             <hr className="w-48 border-black border-1 mb-2" />
             <a
               onClick={() => scrollToSection("#home")}
-              className="font-bold text-gray-600 hover:text-black transition-colors"
+              className="font-bold text-gray-600 hover:text-black transition-colors hover:scale-105 duration-200 ease-in-out"
             >
               Home
             </a>
             <a
               onClick={() => scrollToSection("#about")}
-              className="font-bold text-gray-600 hover:text-black transition-colors"
+              className="font-bold text-gray-600 hover:text-black transition-colors hover:scale-105 duration-200 ease-in-out"
             >
               About
             </a>
             <a
               onClick={() => scrollToSection("#projects")}
-              className="font-bold text-gray-600 hover:text-black transition-colors"
+              className="font-bold text-gray-600 hover:text-black transition-colors hover:scale-105 duration-200 ease-in-out"
             >
               Projects
             </a>
             <a
               onClick={() => scrollToSection("#contact")}
-              className="font-bold text-gray-600 hover:text-black transition-colors"
+              className="font-bold text-gray-600 hover:text-black transition-colors hover:scale-105 duration-200 ease-in-out"
             >
               Contact
             </a>
             <a
               href="/Phoebe_Lee_CV.pdf"
               target="_blank"
-              className="font-bold text-gray-600 hover:text-black transition-colors"
+              className="font-bold text-gray-600 hover:text-black transition-colors hover:scale-105 duration-200 ease-in-out"
             >
               Resume
             </a>

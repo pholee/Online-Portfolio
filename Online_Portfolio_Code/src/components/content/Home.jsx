@@ -3,10 +3,10 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const Home = () => {
   return (
     <section id="home" className="min-h-screen p-8">
-      
+
       <RevealOnScroll>
         {/* Background */}
-        <div className="absolute top-1/3 right-1/16 w-150 h-150 bg-blue-200 rounded-full blur-2xl opacity-700 -z-10"></div>
+        <div className="absolute top-1/4 right-1/20 w-100 h-100 sm:w-125 sm:h-125 md:w-175 md:h-175 bg-blue-200 rounded-full blur-2xl -z-10"></div>
 
         <div className="max-w-6xl mx-auto text-left z-10">
           {/* Logo and name container */}
@@ -63,6 +63,7 @@ export const Home = () => {
           <hr className="w-full border-black mb-10" />
         </div>
       </RevealOnScroll>
+      
     </section>
   );
 };

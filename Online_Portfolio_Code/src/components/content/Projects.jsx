@@ -3,9 +3,9 @@ import { RevealOnScroll } from "../RevealOnScroll";
 export const Projects = () => {
     return (
       <section id="projects" className="min-h-screen p-8">
-        
+
         <RevealOnScroll>
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-6xl mx-auto mb-10">
             {/* Heading */}
             <h2 className="text-2xl font-bold mb-8">
               <span className="w-3 h-3 bg-black inline-block mr-4"></span>
@@ -107,6 +107,7 @@ export const Projects = () => {
             {/* View all button soon*/}
           </div>
         </RevealOnScroll>
+
       </section>
     );
   };
