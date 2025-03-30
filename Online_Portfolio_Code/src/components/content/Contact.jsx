@@ -11,13 +11,14 @@ export const Contact = () => {
             {/* Background */}
             <div className="absolute top-1/8 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-150 h-150 sm:w-200 sm:h-200 md:w-250 md:h-250 bg-blue-200 rounded-full blur-2xl -z-10"></div>
 
-            <div className="max-w-6xl mx-auto flex flex-col h-full">
+            <div className="h-full max-w-6xl mx-auto flex flex-col z-10">
 
               {/* Menu */}
               <div className="cursor-pointer flex flex-col space-y-4 flex-grow">
                 <a
                   href="https://www.linkedin.com/in/pholee"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-xl md:text-2xl text-gray-600 hover:text-black transition-colors"
                 >
                   Linkedin
@@ -25,6 +26,7 @@ export const Contact = () => {
                 <a
                   href="https://github.com/pholee"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="text-xl md:text-2xl text-gray-600 hover:text-black transition-colors"
                 >
                   Github
@@ -38,7 +40,7 @@ export const Contact = () => {
               </div>
 
               {/* Catchphrase */}
-              <h1 className="text-right text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-semi-bold mb-6">
+              <h1 className="text-right text-6xl sm:text-7xl md:text-8xl font-semi-bold mb-6">
                 Get in touch
               </h1>
 
