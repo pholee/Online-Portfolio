@@ -60,7 +60,7 @@ export const Home = () => {
           </p>
 
           {/* Divider */}
-          <hr className="w-full border-black mb-10" />
+          <hr className="w-full border-black mb-10 -z-20 relative" />
         </div>
       </RevealOnScroll>
       

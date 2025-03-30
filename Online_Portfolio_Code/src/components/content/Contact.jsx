@@ -1,7 +1,6 @@
 export const Contact = () => {
     return (
       <section id="contact" className="">
-
         <div
           className="relative h-[500px] md:h-[700px]"
           style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
@@ -13,6 +12,7 @@ export const Contact = () => {
             <div className="absolute top-1/8 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-150 h-150 sm:w-200 sm:h-200 md:w-250 md:h-250 bg-blue-200 rounded-full blur-2xl -z-10"></div>
 
             <div className="max-w-6xl mx-auto flex flex-col h-full">
+
               {/* Menu */}
               <div className="cursor-pointer flex flex-col space-y-4 flex-grow">
                 <a
@@ -38,22 +38,25 @@ export const Contact = () => {
               </div>
 
               {/* Catchphrase */}
-              <h1 className="text-right text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-bold mb-6">
+              <h1 className="text-right text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-semi-bold mb-6">
                 Get in touch
               </h1>
 
               {/* Footer */}
               <footer className="mt-auto">
+
                 {/* Divider */}
                 <hr className="w-full border-black mb-8" />
 
                 {/* Footer info */}
                 <div className="flex justify-between items-center">
+
                   {/* Location */}
                   <p className="text-sm md:text-lg">London, UK</p>
 
                   {/* Last update and logo container*/}
                   <div className="flex items-center gap-4 md:gap-8">
+
                     {/* Last Update */}
                     <div className="grid grid-rows-2 gap-2">
                       <p className="text-sm md:text-lg">
