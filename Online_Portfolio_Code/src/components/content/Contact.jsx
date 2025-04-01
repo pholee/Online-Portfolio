@@ -14,7 +14,7 @@ export const Contact = () => {
             <div className="h-full max-w-6xl mx-auto flex flex-col z-10">
 
               {/* Menu */}
-              <div className="cursor-pointer flex flex-col space-y-4 flex-grow mt-4">
+              <div className="cursor-pointer inline-flex flex-col w-fit space-y-4 mt-4">
                 <a
                   href="https://www.linkedin.com/in/pholee"
                   target="_blank"
@@ -39,13 +39,12 @@ export const Contact = () => {
                 </a>
               </div>
 
-              {/* Catchphrase */}
-              <h1 className="text-right text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-semi-bold mb-6">
-                Get in touch
-              </h1>
-
               {/* Footer */}
               <footer className="mt-auto">
+              {/* Catchphrase */}
+              <h1 className="bottom-0 text-right text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-semi-bold mb-6">
+                Get in touch
+              </h1>
 
                 {/* Divider */}
                 <hr className="w-full mb-8" />
