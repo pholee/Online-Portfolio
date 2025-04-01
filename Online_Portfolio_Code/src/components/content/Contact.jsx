@@ -14,7 +14,7 @@ export const Contact = () => {
             <div className="h-full max-w-6xl mx-auto flex flex-col z-10">
 
               {/* Menu */}
-              <div className="cursor-pointer flex flex-col space-y-4 flex-grow">
+              <div className="cursor-pointer flex flex-col space-y-4 flex-grow mt-4">
                 <a
                   href="https://www.linkedin.com/in/pholee"
                   target="_blank"
@@ -32,7 +32,7 @@ export const Contact = () => {
                   Github
                 </a>
                 <a
-                  href="mailto:your-email@example.com"
+                  href="mailto:pholee18@gmail.com"
                   className="text-xl md:text-2xl text-gray-600 hover:text-black transition-colors"
                 >
                   Email
@@ -40,7 +40,7 @@ export const Contact = () => {
               </div>
 
               {/* Catchphrase */}
-              <h1 className="text-right text-6xl sm:text-7xl md:text-8xl font-semi-bold mb-6">
+              <h1 className="text-right text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-semi-bold mb-6">
                 Get in touch
               </h1>
 

@@ -45,19 +45,15 @@ export const About = () => {
           {/* About me info grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
             {/* Column 1 */}
-            <div className="md:col-span-1 grid grid-rows-2 gap-6">
-
+            <div className="md:col-span-1 flex flex-col gap-6">
               {/* Short intro & skills */}
-              {/* Row 1 */}
-              <div className="p-6 rounded-xl border-black/10 border hover:-translate-y-1 transition-all">
-                <p className="text-gray-600 mb-6">
-                  Blah blah blah blah blah blah blah
-                </p>
 
+              {/* Row 1 */}
+              <div className="p-6 rounded-xl border-black/10 border">
                 {/* Skills grid */}
                 <div className="grid grid-cols-1 gap-6">
                   {/* Frontend skills */}
-                  <div className="rounded-xl p-6">
+                  <div className="rounded-xl">
                     <h3 className="text-xl font-bold mb-4">Frontend</h3>
                     <div className="flex flex-wrap gap-2">
                       {frontendSkills.map((tech, key) => (
@@ -71,7 +67,7 @@ export const About = () => {
                     </div>
                   </div>
                   {/* Backend skills */}
-                  <div className="rounded-xl p-6">
+                  <div className="rounded-xl">
                     <h3 className="text-xl font-bold mb-4">Backend</h3>
                     <div className="flex flex-wrap gap-2">
                       {backendSkills.map((tech, key) => (
@@ -89,7 +85,7 @@ export const About = () => {
 
               {/* Row 2 */}
               {/* Education */}
-              <div className="p-6 rounded-xl border-black/10 border hover:-translate-y-1 transition-all">
+              <div className="p-6 rounded-xl border-black/10 border">
                 <h3 className="text-xl font-bold mb-4"> Education </h3>
                 <ul className="list-disc list-inside text-gray-600 space-y-2">
                   <li>
@@ -99,15 +95,15 @@ export const About = () => {
                     - City St.George's University of London (2024-present)
                   </li>
                   <li>
-                    Relevant Coursework: Data Structures, Web Development, Cloud
-                    Computing...
+                    Relevant Coursework: Systems Architecture, Operating
+                    Systems, Data Structures and Algorithms...
                   </li>
                 </ul>
               </div>
             </div>
 
             {/* Columns 2 & 3 */}
-            <div className="md:col-span-2 p-6">
+            <div className="md:col-span-2">
               <div className="relative">
                 {/* Central line */}
                 <div className="absolute left-1/2 w-0.5 h-full bg-blue-200 transform -translate-x-1/2"></div>

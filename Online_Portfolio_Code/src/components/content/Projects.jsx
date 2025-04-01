@@ -15,12 +15,6 @@ export const Projects = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* 1 */}
               <div className="p-6 rounded-xl border border-black/10 hover:-translate-y-1 hover:border-blue-400/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-                {/* Image */}
-                <img
-                  src={"/Processing App.png"}
-                  alt="Processing App"
-                  className="mb-8"
-                />
                 <h3 className="text-xl font-bold mb-2"> Processing App </h3>
                 <p className="text-gray-600 mb-4">
                   A fun interactable processing sketch that reads data from a
@@ -42,7 +36,7 @@ export const Projects = () => {
                   <a
                     href="https://github.com/pholee/Dear-Data-Diary-Creative-Coding"
                     target="_blank"
-                    className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                    className="text-sm text-blue-400 hover:text-blue-300 transition-colors mt-4"
                   >
                     View Project →
                   </a>
@@ -50,12 +44,6 @@ export const Projects = () => {
               </div>
               {/* 2 */}
               <div className="p-6 rounded-xl border border-black/10 hover:-translate-y-1 hover:border-blue-400/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-                {/* Image */}
-                <img
-                  src={"/Portfolio Website.png"}
-                  alt="Portfolio Website"
-                  className="mb-8"
-                />
                 <h3 className="text-xl font-bold mb-2">
                   This Portfolio Website
                 </h3>
@@ -77,7 +65,7 @@ export const Projects = () => {
                   <a
                     href="https://github.com/pholee/Online-Portfolio"
                     target="_blank"
-                    className="text-blue-400 hover:text-blue-300 transition-colors my-4"
+                    className="text-sm text-blue-400 hover:text-blue-300 transition-colors mt-4"
                   >
                     View Project →
                   </a>
@@ -85,12 +73,6 @@ export const Projects = () => {
               </div>
               {/* 3 */}
               <div className="p-6 rounded-xl border border-black/10 hover:-translate-y-1 hover:border-blue-400/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-                {/* Image */}
-                <img
-                  src={"/CityEngine 2D-Game.png"}
-                  alt="CityEngine 2D-Game"
-                  className="mb-8"
-                />
                 <h3 className="text-xl font-bold mb-2">
                   CityEngine 2D-Game
                   <span className="block text-sm text-gray-500">(coming soon)</span>

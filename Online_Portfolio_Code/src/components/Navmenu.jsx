@@ -1,10 +1,13 @@
-import { useEffect } from "react";
+import { useEffect} from "react";
 
 export const Navmenu = ({ menuOpen, setMenuOpen }) => {
+
+  {/* Desktop and mobile menu functionality */}
   useEffect(() => {
     document.body.style.overflow = menuOpen ? "hidden" : "";
   }, [menuOpen]);
 
+  {/* Scroll on click */}
   const scrollToSection = (id) => {
     const section = document.querySelector(id);
     if (section) {
@@ -14,10 +17,9 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
   };
 
   return (
-    <nav className="fixed top-0 w-full z-40 p-8">
+    <nav className="fixed top-0 right-0 z-40 p-8">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-end">
-
           {/* Mobile */}
           {!menuOpen && (
             <div
@@ -30,7 +32,6 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
 
           {/* Desktop */}
           <div className="hidden md:flex flex-col items-end">
-            
             {/* Divider */}
             <hr className="w-48 border-black border-1 mb-2" />
             <a

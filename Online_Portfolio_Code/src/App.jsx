@@ -14,6 +14,7 @@ function App() {
   const [isLoaded, setIsLoaded] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
+  {/* Smooth scrolling */}
   useEffect( () => {
     const lenis = new Lenis()
     function raf(time) {
@@ -29,7 +30,7 @@ function App() {
       <div
         className={`min-h-screen transition-opacity duration-700 ${
           isLoaded ? "opacity-100" : "opacity-0"
-        } bg-white text-black`}
+        }`}
       >
         <Navmenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
         <NavmenuMobile menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
