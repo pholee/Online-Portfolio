@@ -14,7 +14,7 @@ export const Home = () => {
             <img
               src={"/PL-logo.svg"}
               alt="PL-Logo"
-              className="h-60 md:h-80 mb-20"
+              className="h-60 md:h-80 mb-20 dark:invert"
             />
 
             {/* Name */}
@@ -23,7 +23,7 @@ export const Home = () => {
               <div className="grid grid-rows-6">
                 {["P", "H", "O", "E", "B", "E"].map((letter, index) => (
                   <div key={index} className="ml-4">
-                    <p className="text-4xl md:text-5xl font-extrablack">
+                    <p className="font-mono text-4xl md:text-5xl font-extrablack">
                       {letter}
                     </p>
                   </div>
@@ -33,7 +33,7 @@ export const Home = () => {
               <div className="h-30 md:h-41 grid grid-rows-3">
                 {["L", "E", "E"].map((letter, index) => (
                   <div key={index} className="ml-2">
-                    <p className="text-4xl md:text-5xl font-extrablack">
+                    <p className="font-mono text-4xl md:text-5xl font-extrablack">
                       {letter}
                     </p>
                   </div>
@@ -46,7 +46,7 @@ export const Home = () => {
           <h1 className="font-bold text-3xl md:text-4xl mb-4">Hello!</h1>
 
           {/* Paragraph */}
-          <p className="text-gray-600 text-lg mb-8 max-w-2xl">
+          <p className="text-text-2 text-lg mb-8 max-w-2xl">
             I’m Phoebe, a first-year Computer Science student with a passion for
             art and design, dedicated to crafting intuitive and visually
             compelling digital experiences. As I delve into various disciplines

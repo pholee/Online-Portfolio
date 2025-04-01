@@ -9,7 +9,7 @@ export const Contact = () => {
           <div className="fixed bottom-0 w-full h-[500px] md:h-[700px] p-8 overflow-hidden">
 
             {/* Background */}
-            <div className="absolute top-1/8 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-150 h-150 sm:w-200 sm:h-200 md:w-250 md:h-250 bg-blue-200 rounded-full blur-2xl -z-10"></div>
+            <div className="absolute top-1/8 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-150 h-150 sm:w-200 sm:h-200 md:w-250 md:h-250 bg-accent-bg rounded-full blur-2xl -z-10"></div>
 
             <div className="h-full max-w-6xl mx-auto flex flex-col z-10">
 

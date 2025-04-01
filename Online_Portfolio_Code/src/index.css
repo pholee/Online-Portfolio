@@ -13,14 +13,16 @@
   --color-text-3: #9ca3af;
 }
 
-@media (prefers-color-scheme:dark){
-  --color-background: black;
-  --color-accent-bg: #f97316;
-  --color-accent-text: #fb923c;
-  --color-text-1: white;
-  --color-text-2: #9ca3af;
-  --color-text-3: #4b5563;
-
+* {
+  @media (prefers-color-scheme:dark){
+    --color-background: black;
+    --color-accent-bg: #de5004;
+    --color-accent-text: #ff7f3a;
+    --color-text-1: white;
+    --color-text-2: #9ca3af;
+    --color-text-3: #4b5563;
+  
+  }
 }
 
 html, body {
