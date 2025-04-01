@@ -1,11 +1,34 @@
 @import "tailwindcss";
 
+@theme {
+  --font-roboto: roboto, "arial", "helvetica", "sans-serif";
+  --font-raleway: raleway, "arial", "helvetica", "sans-serif";
+  --font-weight-extrablack: 1000;
+
+  --color-background: white;
+  --color-accent-bg: #BFDBFE;
+  --color-accent-text: #60A5FA;
+  --color-text-1: black;
+  --color-text-2: #4b5563;
+  --color-text-3: #9ca3af;
+}
+
+@media (prefers-color-scheme:dark){
+  --color-background: black;
+  --color-accent-bg: #f97316;
+  --color-accent-text: #fb923c;
+  --color-text-1: white;
+  --color-text-2: #9ca3af;
+  --color-text-3: #4b5563;
+
+}
+
 html, body {
   margin: 0;
   padding: 0;
-  font-family: "roboto", "raleway", "arial", "helvetica", "sans-serif";
-  background: #FFFFFF;
-  color: #000000;
+  font: roboto;
+  background: var(--color-background);
+  color: var(--color-text-1);
 }
 
 @layer utilities {

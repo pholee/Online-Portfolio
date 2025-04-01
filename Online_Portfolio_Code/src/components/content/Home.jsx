@@ -5,7 +5,7 @@ export const Home = () => {
     <section id="home" className="min-h-screen p-8">
       <RevealOnScroll>
         {/* Background */}
-        <div className="absolute top-1/4 right-1/20 w-100 h-100 sm:w-125 sm:h-125 md:w-175 md:h-175 bg-blue-200 rounded-full blur-2xl -z-10"></div>
+        <div className="absolute top-1/5 right-0 w-100 h-100 sm:w-125 sm:h-125 md:w-175 md:h-175 bg-accent-bg rounded-full blur-2xl -z-10"></div>
 
         <div className="max-w-6xl mx-auto text-left z-10">
           {/* Logo and name container */}
@@ -18,22 +18,22 @@ export const Home = () => {
             />
 
             {/* Name */}
-            <div className="h-60 md:h-85 grid grid-cols-2">
+            <div className="h-55 md:h-82 grid grid-cols-2">
               {/* Phoebe */}
               <div className="grid grid-rows-6">
                 {["P", "H", "O", "E", "B", "E"].map((letter, index) => (
                   <div key={index} className="ml-4">
-                    <p className="text-black text-4xl font-raleway font-bold">
+                    <p className="text-4xl md:text-5xl font-extrablack">
                       {letter}
                     </p>
                   </div>
                 ))}
               </div>
               {/* Lee */}
-              <div className="h-30 md:h-42.5 grid grid-rows-3">
+              <div className="h-30 md:h-41 grid grid-rows-3">
                 {["L", "E", "E"].map((letter, index) => (
-                  <div key={index} className="ml-4">
-                    <p className="text-black text-4xl font-raleway font-bold">
+                  <div key={index} className="ml-2">
+                    <p className="text-4xl md:text-5xl font-extrablack">
                       {letter}
                     </p>
                   </div>
@@ -43,7 +43,7 @@ export const Home = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="text-3xl md:text-4xl font-bold mb-4">Hello!</h1>
+          <h1 className="font-bold text-3xl md:text-4xl mb-4">Hello!</h1>
 
           {/* Paragraph */}
           <p className="text-gray-600 text-lg mb-8 max-w-2xl">
@@ -59,7 +59,7 @@ export const Home = () => {
           </p>
 
           {/* Divider */}
-          <hr className="w-full border-black mb-10 -z-20 relative" />
+          <hr className="w-full mb-10 -z-20 relative" />
         </div>
       </RevealOnScroll>
     </section>

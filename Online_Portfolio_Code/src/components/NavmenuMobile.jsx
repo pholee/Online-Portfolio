@@ -12,7 +12,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
   return (
     <div
       className={`
-                    fixed top-0 left-0 w-full bg-[rgb(255,255,255,0.8)] z-40 flex flex-col items-center justify-center 
+                    fixed top-0 left-0 w-full bg-background/80 z-40 flex flex-col items-center justify-center 
                     transition-all duration-300 ease-in-out
                     ${
                       menuOpen
@@ -22,7 +22,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
                 `}
     >
       <button
-        className="absolute top-8 right-8.5 text-black text-3xl focus:outline-none cursor-pointer"
+        className="absolute top-8 right-8.5 text-3xl focus:outline-none cursor-pointer"
         onClick={() => setMenuOpen(false)}
         aria-label="Close menu"
       >
@@ -31,7 +31,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
 
       <a
         onClick={() => scrollToSection("#home")}
-        className={`text-2xl text-black my-4 transform transition-transform duration-300
+        className={`text-2xl my-4 transform transition-transform duration-300
                 ${
                   menuOpen
                     ? "opacity-100 translate-y-0"
@@ -43,7 +43,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
       </a>
       <a
         onClick={() => scrollToSection("#about")}
-        className={`text-2xl text-black my-4 transform transition-transform duration-300
+        className={`text-2xl my-4 transform transition-transform duration-300
                 ${
                   menuOpen
                     ? "opacity-100 translate-y-0"
@@ -55,7 +55,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
       </a>
       <a
         onClick={() => scrollToSection("#projects")}
-        className={`text-2xl text-black my-4 transform transition-transform duration-300
+        className={`text-2xl my-4 transform transition-transform duration-300
             ${
               menuOpen
                 ? "opacity-100 translate-y-0"
@@ -67,7 +67,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
       </a>
       <a
         onClick={() => scrollToSection("#contact")}
-        className={`text-2xl text-black my-4 transform transition-transform duration-300
+        className={`text-2xl my-4 transform transition-transform duration-300
             ${
               menuOpen
                 ? "opacity-100 translate-y-0"
@@ -80,7 +80,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
       <a
         href="public/Phoebe_Lee_CV.pdf"
         target="_blank"
-        className={`text-2xl text-black my-4 transform transition-transform duration-300
+        className={`text-2xl my-4 transform transition-transform duration-300
             ${
               menuOpen
                 ? "opacity-100 translate-y-0"

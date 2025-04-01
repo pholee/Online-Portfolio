@@ -49,7 +49,7 @@ export const About = () => {
               {/* Short intro & skills */}
 
               {/* Row 1 */}
-              <div className="p-6 rounded-xl border-black/10 border">
+              <div className="p-6 rounded-xl border-text-1/10 border">
                 {/* Skills grid */}
                 <div className="grid grid-cols-1 gap-6">
                   {/* Frontend skills */}
@@ -59,7 +59,7 @@ export const About = () => {
                       {frontendSkills.map((tech, key) => (
                         <span
                           key={key}
-                          className="bg-blue-400/10 text-blue-400 py-1 px-3 rounded-full text-sm hover:bg-blue-400/20"
+                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-sm hover:bg-accent-text/20"
                         >
                           {tech}
                         </span>
@@ -73,7 +73,7 @@ export const About = () => {
                       {backendSkills.map((tech, key) => (
                         <span
                           key={key}
-                          className="bg-blue-400/10 text-blue-400 py-1 px-3 rounded-full text-sm hover:bg-blue-400/20"
+                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-sm hover:bg-accent-text/20"
                         >
                           {tech}
                         </span>
@@ -85,11 +85,11 @@ export const About = () => {
 
               {/* Row 2 */}
               {/* Education */}
-              <div className="p-6 rounded-xl border-black/10 border">
+              <div className="p-6 rounded-xl border-text-1/10 border">
                 <h3 className="text-xl font-bold mb-4"> Education </h3>
-                <ul className="list-disc list-inside text-gray-600 space-y-2">
+                <ul className="list-disc list-inside text-text-2 space-y-2">
                   <li>
-                    <span className="font-semi-bold text-black">
+                    <span className="font-semi-bold">
                       BSc in Computer Science
                     </span>{" "}
                     - City St.George's University of London (2024-present)
@@ -106,7 +106,7 @@ export const About = () => {
             <div className="md:col-span-2">
               <div className="relative">
                 {/* Central line */}
-                <div className="absolute left-1/2 w-0.5 h-full bg-blue-200 transform -translate-x-1/2"></div>
+                <div className="absolute left-1/2 w-0.5 h-full bg-accent-bg transform -translate-x-1/2"></div>
 
                 {/* Timeline items */}
                 <div className="space-y-1">
@@ -120,7 +120,7 @@ export const About = () => {
                     >
                       {/* Timeline Dot */}
                       <div
-                        className={`absolute top-8 w-3 h-3 bg-blue-200 rounded-full ${
+                        className={`absolute top-8 w-3 h-3 bg-accent-bg rounded-full ${
                           index % 2 === 0
                             ? "left-1/2 -ml-1.5"
                             : "right-1/2 -mr-1.5"
@@ -138,10 +138,10 @@ export const About = () => {
                         <h4 className="font-semibold text-md md:text-lg">
                           {job.role}
                         </h4>
-                        <p className="text-sm/4 md:text-sm text-gray-400 mb-2">
+                        <p className="text-sm/4 md:text-sm text-text-3 mb-2">
                           {job.company} • {job.period}
                         </p>
-                        <p className="text-sm md:text-md text-gray-600">
+                        <p className="text-sm md:text-md text-text-2">
                           {job.description}
                         </p>
                       </div>

@@ -19,7 +19,7 @@ export const Contact = () => {
                   href="https://www.linkedin.com/in/pholee"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl md:text-2xl text-gray-600 hover:text-black transition-colors"
+                  className="text-xl md:text-2xl text-text-2 hover:text-text-1 transition-colors"
                 >
                   Linkedin
                 </a>
@@ -27,13 +27,13 @@ export const Contact = () => {
                   href="https://github.com/pholee"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl md:text-2xl text-gray-600 hover:text-black transition-colors"
+                  className="text-xl md:text-2xl text-text-2 hover:text-text-1 transition-colors"
                 >
                   Github
                 </a>
                 <a
                   href="mailto:pholee18@gmail.com"
-                  className="text-xl md:text-2xl text-gray-600 hover:text-black transition-colors"
+                  className="text-xl md:text-2xl text-text-2 hover:text-text-1 transition-colors"
                 >
                   Email
                 </a>
@@ -48,7 +48,7 @@ export const Contact = () => {
               <footer className="mt-auto">
 
                 {/* Divider */}
-                <hr className="w-full border-black mb-8" />
+                <hr className="w-full mb-8" />
 
                 {/* Footer info */}
                 <div className="flex justify-between items-center">
