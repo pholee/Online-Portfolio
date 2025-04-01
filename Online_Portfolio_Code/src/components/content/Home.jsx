@@ -12,7 +12,7 @@ export const Home = () => {
           <div className="left-0 mb-6 flex">
             {/* Logo */}
             <img
-              src={"/PL-logo.svg"}
+              src={"/PL-logo-l.svg"}
               alt="PL-Logo"
               className="h-60 md:h-80 mb-20 dark:invert"
             />
