@@ -78,7 +78,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
         Contact
       </a>
       <a
-        href="public/Phoebe_Lee_CV.pdf"
+        href="./Online-Portfolio/Phoebe_Lee_CV.pdf"
         target="_blank"
         className={`text-2xl my-4 transform transition-transform duration-300
             ${
