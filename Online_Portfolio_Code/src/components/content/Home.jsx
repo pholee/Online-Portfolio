@@ -43,7 +43,7 @@ export const Home = () => {
           </div>
 
           {/* Heading */}
-          <h1 className="font-bold text-3xl md:text-4xl mb-4">Hello!</h1>
+          <h1 className="font-semibold text-3xl md:text-4xl mb-4">Hello!</h1>
 
           {/* Paragraph */}
           <p className="text-text-2 text-lg mb-8 max-w-2xl">
