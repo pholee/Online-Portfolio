@@ -17,13 +17,13 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
   };
 
   return (
-    <nav className="fixed top-0 right-0 z-40 p-8">
+    <nav className="fixed w-full top-0 right-0 z-40 p-8 pointer-events-none">
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col items-end">
           {/* Mobile */}
           {!menuOpen && (
             <div
-              className="cursor-pointer z-40 md:hidden font-bold text-2xl"
+              className="pointer-events-auto z-40 md:hidden font-bold text-2xl"
               onClick={() => setMenuOpen(true)}
             >
               &#9776;
@@ -31,7 +31,7 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
           )}
 
           {/* Desktop */}
-          <div className="hidden md:flex flex-col items-end">
+          <div className="hidden md:flex flex-col items-end pointer-events-auto">
             {/* Divider */}
             <hr className="w-48 border-1 mb-2" />
             <a
