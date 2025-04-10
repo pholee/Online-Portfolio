@@ -46,7 +46,7 @@ export const Home = () => {
           <h1 className="font-semibold text-3xl md:text-4xl mb-4">Hello!</h1>
 
           {/* Paragraph */}
-          <p className="text-text-2 text-lg mb-8 max-w-2xl">
+          <p className="text-text-2 text-sm sm:text-lg mb-8 max-w-2xl">
             I’m Phoebe, a first-year Computer Science student with a passion for
             art and design, dedicated to crafting intuitive and visually
             compelling digital experiences. As I delve into various disciplines

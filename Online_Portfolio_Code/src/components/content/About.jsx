@@ -40,7 +40,7 @@ export const About = () => {
       <RevealOnScroll>
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
-          <h2 className="text-3xl font-bold mb-8">About me</h2>
+          <h2 className="text-2xl sm:text-3xl font-bold mb-8">About me</h2>
 
           {/* About me info grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
@@ -54,12 +54,12 @@ export const About = () => {
                 <div className="grid grid-cols-1 gap-6">
                   {/* Frontend skills */}
                   <div className="rounded-xl">
-                    <h3 className="text-xl font-bold mb-4">Frontend</h3>
+                    <h3 className="text-lg sm:text-xl font-bold mb-4">Frontend</h3>
                     <div className="flex flex-wrap gap-2">
                       {frontendSkills.map((tech, key) => (
                         <span
                           key={key}
-                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-sm hover:bg-accent-text/20"
+                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
                         >
                           {tech}
                         </span>
@@ -68,12 +68,12 @@ export const About = () => {
                   </div>
                   {/* Backend skills */}
                   <div className="rounded-xl">
-                    <h3 className="text-xl font-bold mb-4">Backend</h3>
+                    <h3 className="text-lg sm:text-xl font-bold mb-4">Backend</h3>
                     <div className="flex flex-wrap gap-2">
                       {backendSkills.map((tech, key) => (
                         <span
                           key={key}
-                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-sm hover:bg-accent-text/20"
+                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
                         >
                           {tech}
                         </span>
@@ -86,8 +86,8 @@ export const About = () => {
               {/* Row 2 */}
               {/* Education */}
               <div className="p-6 rounded-xl border-text-1/10 border">
-                <h3 className="text-xl font-bold mb-4"> Education </h3>
-                <ul className="list-disc list-inside text-text-2 space-y-2">
+                <h3 className="text-lg sm:text-xl font-bold mb-4"> Education </h3>
+                <ul className="list-disc list-inside text-text-2 text-sm sm:text-md space-y-2">
                   <li>
                     <span className="font-semi-bold">
                       BSc in Computer Science
