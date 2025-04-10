@@ -131,8 +131,8 @@ export const About = () => {
                       <div
                         className={`w-5/12 rounded-lg ${
                           index % 2 === 0
-                            ? "ml-4 mr-auto text-left"
-                            : "mr-4 ml-auto text-right"
+                            ? "mr-auto text-left"
+                            : "ml-auto text-right"
                         }`}
                       >
                         <h4 className="font-semibold text-sm sm:text-md md:text-lg">
