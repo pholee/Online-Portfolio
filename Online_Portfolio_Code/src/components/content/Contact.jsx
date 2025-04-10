@@ -53,7 +53,7 @@ export const Contact = () => {
                 <div className="flex justify-between">
 
                   {/* Location */}
-                  <p className="mt-3 sm:mt-2 text-xs sm:text-sm md:text-lg">London, UK</p>
+                  <p className="mt-2.5 sm:mt-1.5 text-xs sm:text-sm md:text-lg">London, UK</p>
 
                   {/* Last update and logo container*/}
                   <div className="flex items-center gap-4 md:gap-8">
