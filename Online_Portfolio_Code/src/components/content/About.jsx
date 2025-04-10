@@ -43,7 +43,7 @@ export const About = () => {
           <h2 className="text-2xl sm:text-3xl font-bold mb-8">About me</h2>
 
           {/* About me info grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6">
             {/* Column 1 */}
             <div className="md:col-span-1 flex flex-col gap-6">
               {/* Short intro & skills */}
