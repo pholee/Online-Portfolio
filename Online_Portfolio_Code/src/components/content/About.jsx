@@ -129,19 +129,19 @@ export const About = () => {
 
                       {/* Job Details */}
                       <div
-                        className={`w-5/12 p-4 rounded-lg ${
+                        className={`w-5/12 rounded-lg ${
                           index % 2 === 0
                             ? "ml-4 mr-auto text-left"
                             : "mr-4 ml-auto text-right"
                         }`}
                       >
-                        <h4 className="font-semibold text-md md:text-lg">
+                        <h4 className="font-semibold text-sm sm:text-md md:text-lg">
                           {job.role}
                         </h4>
-                        <p className="text-sm/4 md:text-sm text-text-3 mb-2">
+                        <p className="text-xs sm:text-sm md:text-sm text-text-3 mb-2">
                           {job.company} • {job.period}
                         </p>
-                        <p className="text-sm md:text-md text-text-2">
+                        <p className="text-xs sm:text-sm md:text-md text-text-2">
                           {job.description}
                         </p>
                       </div>

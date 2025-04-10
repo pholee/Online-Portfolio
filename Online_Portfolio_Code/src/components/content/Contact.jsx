@@ -50,10 +50,10 @@ export const Contact = () => {
                 <hr className="w-full mb-8" />
 
                 {/* Footer info */}
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between">
 
                   {/* Location */}
-                  <p className="text-sm md:text-lg">London, UK</p>
+                  <p className="mt-2 text-xs sm:text-sm md:text-lg">London, UK</p>
 
                   {/* Last update and logo container*/}
                   <div className="flex items-center gap-4 md:gap-8">

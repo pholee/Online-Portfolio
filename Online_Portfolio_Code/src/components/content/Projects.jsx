@@ -81,7 +81,7 @@ export const Projects = () => {
                   A fresh take on the tale of Little Red Riding Hood in a small,
                   story based 2D-platformer.
                   <span className="text-sm text-text-2">
-                    {" "}Coded using City St.George's, Univerisy of London's own
+                    {" "}Coded using City St.George's, University of London's own
                     physics engine
                   </span>
                 </p>
