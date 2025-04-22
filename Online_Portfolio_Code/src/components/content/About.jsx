@@ -104,7 +104,7 @@ export const About = () => {
 
             {/* Columns 2 & 3 */}
             <div className="md:col-span-2">
-              <div className="relative mt-4 sm:px-8 md:px-4">
+              <div className="relative mt-8 sm:px-8 md:px-4">
                 {/* Central line */}
                 <div className="absolute left-1/2 w-0.5 h-full bg-accent-bg transform -translate-x-1/2"></div>
 
