@@ -1,16 +1,15 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = ["React", "Vue", "TypeScript", "TailwindCSS"];
-  const backendSkills = ["Node.js", "Python", "Django"];
+  const frontendSkills = ["Figma", "React", "TailwindCSS"];
+  const backendSkills = ["Python", "Django"];
   const workExperience = [
     {
-      role: "Course Representative",
-      company:
-        "City St.George's, University of London & University of Westminster",
-      period: "2023 - Present",
+      role: "UX Intern",
+      company: "Koffeecup",
+      period: "Upcoming in Jun 2025",
       description:
-        "Collected and analyzed feedback from students, summarizing and presenting key insights during Student-Staff Liaison meetings.",
+        "Designing user interface for digital experiences (including games and AR experiences).",
     },
     {
       role: "UKSEDS National Rocketry Championship 2025",
@@ -27,11 +26,19 @@ export const About = () => {
         "Led a team in a robotics competition to build and code an autonomous robot using arduino.",
     },
     {
-      role: "Data Analysis Internship",
+      role: "Data Analysis Intern",
       company: "Meta",
       period: "Oct 2024 - Oct 2024",
       description:
         "Conducted exploratory data analysis on a set of data, producing a professional report based on a given business scenario.",
+    },
+    {
+      role: "Course Representative",
+      company:
+        "City St.George's, University of London & University of Westminster",
+      period: "2023 - Present",
+      description:
+        "Collected and analyzed feedback from students, summarizing and presenting key insights during Student-Staff Liaison meetings.",
     },
   ];
 

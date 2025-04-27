@@ -47,8 +47,7 @@ export const Home = () => {
 
           {/* Paragraph */}
           <p className="text-text-2 text-sm sm:text-md sm:text-lg mb-8 max-w-2xl">
-            I’m Phoebe, a first-year Computer Science student with a passion for
-            art and design, dedicated to crafting intuitive and visually
+            I’m Phoebe, a first-year Computer Science student dedicated to crafting intuitive and visually
             compelling digital experiences. As I delve into various disciplines
             within computer science, I discover that every challenge presents an
             opportunity to apply creativity, enabling the development of
