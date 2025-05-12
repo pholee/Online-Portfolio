@@ -9,7 +9,7 @@ export const About = () => {
       company: "Koffeecup",
       period: "Upcoming in Jun 2025",
       description:
-        "Designing user interface for digital experiences (including games and AR experiences).",
+        "Designing user interface for digital experiences (including games and AR).",
     },
     {
       role: "UKSEDS National Rocketry Championship 2025",
