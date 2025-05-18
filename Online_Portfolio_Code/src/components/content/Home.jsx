@@ -5,7 +5,7 @@ export const Home = () => {
     <section id="home" className="min-h-dvh p-8">
       <RevealOnScroll>
         {/* Background */}
-        <div className="absolute top-1/5 right-0 w-100 h-100 sm:w-125 sm:h-125 md:w-175 md:h-175 bg-accent-bg rounded-full blur-2xl -z-10"></div>
+        <div className="absolute top-1/5 md:top-2/5 lg:top-1/5 right-0 w-100 h-100 sm:w-125 sm:h-125 md:w-175 md:h-175 bg-accent-bg rounded-full blur-2xl -z-10"></div>
 
         <div className="max-w-6xl mx-auto my-auto text-left z-10 flex flex-col min-h-dvh">
           {/* Logo and name container */}
