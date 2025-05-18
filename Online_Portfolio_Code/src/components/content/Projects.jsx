@@ -2,7 +2,7 @@ import { RevealOnScroll } from "../RevealOnScroll";
 
 export const Projects = () => {
     return (
-      <section id="projects" className="min-h-screen p-8">
+      <section id="projects" className="min-h-dvh p-8">
         <RevealOnScroll>
           <div className="max-w-6xl mx-auto mb-10">
             {/* Heading */}
@@ -94,6 +94,16 @@ export const Projects = () => {
                       {tech}
                     </span>
                   ))}
+                </div>
+                {/* Feature 3 */}
+                <div className="flex justify-between items-center">
+                  <a
+                    href="https://github.com/pholee/CityEngine-2D-Game"
+                    target="_blank"
+                    className="text-sm text-accent-text hover:text-accent-text/60 transition-colors mt-4"
+                  >
+                    View Project →
+                  </a>
                 </div>
               </div>
               {/* 4 */}

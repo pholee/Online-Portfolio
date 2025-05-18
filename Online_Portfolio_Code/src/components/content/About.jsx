@@ -1,8 +1,8 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-  const frontendSkills = ["Figma", "React", "TailwindCSS"];
-  const backendSkills = ["Python", "Django"];
+  const developmentSkills = ["Python", "Java", "SQL", "HTML/CSS", "Django", "React", "TailwindCSS"];
+  const toolsSkills = ["Git", "Figma"];
   const workExperience = [
     {
       role: "UX Intern",
@@ -43,14 +43,14 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-screen p-8">
+    <section id="about" className="min-h-dvh p-8">
       <RevealOnScroll>
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
           <h2 className="text-2xl sm:text-3xl font-bold mb-8">About me</h2>
 
           {/* About me info grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 md:gap-6">
             {/* Column 1 */}
             <div className="md:col-span-1 flex flex-col gap-6">
               {/* Short intro & skills */}
@@ -61,9 +61,9 @@ export const About = () => {
                 <div className="grid grid-cols-1 gap-6">
                   {/* Frontend skills */}
                   <div className="rounded-xl">
-                    <h3 className="text-lg sm:text-xl font-bold mb-4">Frontend</h3>
+                    <h3 className="text-lg sm:text-xl font-bold mb-4">Development</h3>
                     <div className="flex flex-wrap gap-2">
-                      {frontendSkills.map((tech, key) => (
+                      {developmentSkills.map((tech, key) => (
                         <span
                           key={key}
                           className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
@@ -75,9 +75,9 @@ export const About = () => {
                   </div>
                   {/* Backend skills */}
                   <div className="rounded-xl">
-                    <h3 className="text-lg sm:text-xl font-bold mb-4">Backend</h3>
+                    <h3 className="text-lg sm:text-xl font-bold mb-4">Tools</h3>
                     <div className="flex flex-wrap gap-2">
-                      {backendSkills.map((tech, key) => (
+                      {toolsSkills.map((tech, key) => (
                         <span
                           key={key}
                           className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
@@ -111,7 +111,7 @@ export const About = () => {
 
             {/* Columns 2 & 3 */}
             <div className="md:col-span-2">
-              <div className="relative mt-8 sm:px-8 md:px-4">
+              <div className="relative mt-8 md:mt-0 sm:px-8 md:px-4">
                 {/* Central line */}
                 <div className="absolute left-1/2 w-0.5 h-full bg-accent-bg transform -translate-x-1/2"></div>
 
