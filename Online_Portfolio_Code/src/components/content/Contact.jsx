@@ -73,7 +73,7 @@ export const Contact = () => {
                       src={"/Online-Portfolio/PL-logo-l.svg"}
                       alt="PL-Logo"
                       className="h-15 md:h-20 flex-shrink-0 dark:invert"
-                    />
+                    />                   
                   </div>
                 </div>
               </footer>

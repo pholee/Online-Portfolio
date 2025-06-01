@@ -5,16 +5,16 @@ export const About = () => {
   const toolsSkills = ["Git", "Figma"];
   const workExperience = [
     {
-      role: "UX Intern",
+      role: "UX Design Intern",
       company: "Koffeecup",
-      period: "Upcoming in Jun 2025",
+      period: "Jun 2025 - August 2025",
       description:
         "Designing user interface for digital experiences (including games and AR).",
     },
     {
       role: "UKSEDS National Rocketry Championship 2025",
       company: "City St.George's, University of London",
-      period: "Nov 2024 - Present",
+      period: "Nov 2024 - Jun 2025",
       description:
         "Constructed and soldered flight circuits. Developed data collection software to access remote flight information.",
     },
@@ -26,7 +26,7 @@ export const About = () => {
         "Led a team in a robotics competition to build and code an autonomous robot using arduino.",
     },
     {
-      role: "Data Analysis Intern",
+      role: "Data Analyst Intern",
       company: "Meta",
       period: "Oct 2024 - Oct 2024",
       description:
@@ -99,7 +99,7 @@ export const About = () => {
                     <span className="font-semi-bold">
                       BSc in Computer Science
                     </span>{" "}
-                    - City St.George's University of London (2024-present)
+                    - City St.George&apos;s University of London (2024-present)
                   </li>
                   <li>
                     Relevant Coursework: Systems Architecture, Operating
