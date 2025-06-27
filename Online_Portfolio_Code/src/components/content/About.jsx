@@ -25,13 +25,13 @@ export const About = () => {
       description:
         "Led a team in a robotics competition to build and code an autonomous robot using arduino.",
     },
-    /**{
+    /*{
       role: "Data Analyst Intern",
       company: "Meta",
       period: "Oct 2024 - Oct 2024",
       description:
         "Conducted exploratory data analysis on a set of data, producing a professional report based on a given business scenario.",
-    },**/
+    },*/
     {
       role: "Course Representative",
       company:

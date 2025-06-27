@@ -15,7 +15,7 @@ export const Projects = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {/* 1 */}
               <div className="p-6 rounded-xl border border-text-1/10 hover:-translate-y-1 hover:border-accent-text/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-                <h3 className="text-lg sm:text-xl font-bold mb-2"> Processing App </h3>
+                <h3 className="text-lg sm:text-xl font-bold mb-2"> Diary App </h3>
                 <p className="text-text-2 text-sm sm:text-md mb-4">
                   A fun interactable processing sketch that reads data from a
                   text file containing select information about my day-to-day
@@ -74,16 +74,12 @@ export const Projects = () => {
               {/* 3 */}
               <div className="p-6 rounded-xl border border-text-1/10 hover:-translate-y-1 hover:border-accent-text/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
                 <h3 className="text-lg sm:text-xl font-bold mb-2">
-                  CityEngine 2D-Game
+                  2D Platformer Game
                   <span className="block text-sm text-text-3">(coming soon)</span>
                 </h3>
                 <p className="text-text-2 text-sm sm:text-md mb-4">
                   A fresh take on the tale of Little Red Riding Hood in a small,
-                  story based 2D-platformer.
-                  <span className="text-sm text-text-2">
-                    {" "}Coded using City St.George's, University of London's own
-                    physics engine.
-                  </span>
+                  story based 2D-platformer coded in java.
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">
                   {["Java", "CityEngine"].map((tech, key) => (
@@ -109,7 +105,7 @@ export const Projects = () => {
               {/* 4 */}
               <div className="p-6 rounded-xl border border-text-1/10 hover:-translate-y-1 hover:border-accent-text/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
                 <h3 className="text-lg sm:text-xl font-bold mb-2">
-                  Artist's Portfolio
+                  Artist&apos;s Portfolio
                   <span className="block text-sm text-text-3">(coming soon)</span>
                 </h3>
                 <p className="text-text-2 text-sm sm:text-md mb-4"> ... </p>
