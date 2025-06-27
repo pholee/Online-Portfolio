@@ -9,7 +9,7 @@ export const About = () => {
       company: "Koffeecup",
       period: "Jun 2025 - August 2025",
       description:
-        "Designing user interface for digital experiences (including games and AR).",
+        "Designing wireframes and user flows for digital experiences (including websites, games and VR), also building a shared component library to streamline development for the previously mentioned platforms.",
     },
     {
       role: "UKSEDS National Rocketry Championship 2025",
@@ -25,13 +25,13 @@ export const About = () => {
       description:
         "Led a team in a robotics competition to build and code an autonomous robot using arduino.",
     },
-    {
+    /**{
       role: "Data Analyst Intern",
       company: "Meta",
       period: "Oct 2024 - Oct 2024",
       description:
         "Conducted exploratory data analysis on a set of data, producing a professional report based on a given business scenario.",
-    },
+    },**/
     {
       role: "Course Representative",
       company:

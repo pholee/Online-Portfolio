@@ -82,7 +82,7 @@ export const Projects = () => {
                   story based 2D-platformer.
                   <span className="text-sm text-text-2">
                     {" "}Coded using City St.George's, University of London's own
-                    physics engine
+                    physics engine.
                   </span>
                 </p>
                 <div className="flex flex-wrap gap-2 mb-4">

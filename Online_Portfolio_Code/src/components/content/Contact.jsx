@@ -61,7 +61,7 @@ export const Contact = () => {
                     {/* Last Update */}
                     <div className="grid grid-rows-2 gap-2">
                       <p className="text-xs sm:text-sm md:text-lg">
-                        Last updated in April 2025
+                        Last updated in June 2025
                       </p>
                       <p className="text-xs sm:text-xs md:text-sm text-right">
                         by Phoebe Lee
