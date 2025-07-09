@@ -9,7 +9,7 @@ export const About = () => {
       company: "Koffeecup",
       period: "Jun 2025 - August 2025",
       description:
-        "Designing wireframes and user flows for digital experiences (including websites, games and VR), also building a shared component library to streamline development for the previously mentioned platforms.",
+        "Designing wireframes and user flows for digital experiences (including mobile and VR games), also building a shared component library to streamline development for the previously mentioned.",
     },
     {
       role: "UKSEDS National Rocketry Championship 2025",
@@ -43,7 +43,7 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="min-h-dvh p-8">
+    <section id="about" className="md:mb-16 p-8">
       <RevealOnScroll>
         <div className="max-w-6xl mx-auto">
           {/* Heading */}
@@ -95,23 +95,21 @@ export const About = () => {
               <div className="p-6 rounded-xl border-text-1/10 border">
                 <h3 className="text-lg sm:text-xl font-bold mb-4"> Education </h3>
                 <ul className="list-disc list-inside text-text-2 text-sm sm:text-md space-y-2">
-                  <li>
-                    <span className="font-semi-bold">
+                  <p>
+                    <span className=" text-text-1 font-semi-bold">
                       BSc in Computer Science
-                    </span>{" "}
-                    - City St.George&apos;s University of London (2024-present)
-                  </li>
-                  <li>
-                    Relevant Coursework: Systems Architecture, Operating
-                    Systems, Data Structures and Algorithms...
-                  </li>
+                    </span>
+                    - City St.George&apos;s University of London 
+                    (2024-2027)
+                  </p>
                 </ul>
               </div>
             </div>
 
             {/* Columns 2 & 3 */}
+            {/* Timeline */}
             <div className="md:col-span-2">
-              <div className="relative mt-8 md:mt-0 sm:px-8 md:px-4">
+              <div className="relative mt-16 md:mt-0 sm:px-8 md:px-4">
                 {/* Central line */}
                 <div className="absolute left-1/2 w-0.5 h-full bg-accent-bg transform -translate-x-1/2"></div>
 
