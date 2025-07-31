@@ -131,6 +131,37 @@ export const Projects = () => {
                 </div>
               </div>
             </div>
+            {/* 5 */}
+            <div className="flex flex-col h-full p-6 rounded-xl border border-text-1/10 hover:-translate-y-1 hover:border-accent-text/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
+              <h3 className="text-lg sm:text-xl font-bold mb-2">
+                Indie Game Website
+              </h3>
+              <p className="text-text-2 text-sm sm:text-md mb-4">
+                Designed website UX along with a small embedded iFrame for users to submit their own character designs to feature in the game Hoomanz!
+              </p>
+              <div className="mt-auto">
+                <div className="flex flex-wrap gap-2 mb-4">
+                  {["Figma", "Wireframing", "Userflows"].map((tech, key) => (
+                    <span
+                      key={key}
+                      className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+                {/* Feature 5 */}
+                <div className="flex justify-between items-center">
+                  <a
+                    href="https://www.hoomanz.game/"
+                    target="_blank"
+                    className="text-sm text-accent-text hover:text-accent-text/60 transition-colors"
+                  >
+                    View Project →
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
 
           {/* View all button soon*/}
