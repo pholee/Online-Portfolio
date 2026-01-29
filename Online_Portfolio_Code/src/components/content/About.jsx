@@ -5,9 +5,16 @@ export const About = () => {
   const toolsSkills = ["Git", "Figma"];
   const workExperience = [
     {
+      role: "UX Designer",
+      company: "Koffeecup",
+      period: "Aug 2025 - present",
+      description:
+        "Designing wireframes and user flows for digital experiences (including mobile and VR games), also building a shared component library to streamline development for the previously mentioned.",
+    },
+    {
       role: "UX Design Intern",
       company: "Koffeecup",
-      period: "Jun 2025 - August 2025",
+      period: "Jun 2025 - Aug 2025",
       description:
         "Designing wireframes and user flows for digital experiences (including mobile and VR games), also building a shared component library to streamline development for the previously mentioned.",
     },
@@ -18,13 +25,13 @@ export const About = () => {
       description:
         "Constructed and soldered flight circuits. Developed data collection software to access remote flight information.",
     },
-    {
+    /*{
       role: "IEEE End of Line competition 2024",
       company: "City St.George's, University of London",
       period: "Oct 2024 - Dec 2024",
       description:
         "Led a team in a robotics competition to build and code an autonomous robot using arduino.",
-    },
+    },*/
     /*{
       role: "Data Analyst Intern",
       company: "Meta",
@@ -32,14 +39,14 @@ export const About = () => {
       description:
         "Conducted exploratory data analysis on a set of data, producing a professional report based on a given business scenario.",
     },*/
-    {
+    /*{
       role: "Course Representative",
       company:
         "City St.George's, University of London & University of Westminster",
       period: "2023 - Present",
       description:
         "Collected and analyzed feedback from students, summarizing and presenting key insights during Student-Staff Liaison meetings.",
-    },
+    },*/
   ];
 
   return (
