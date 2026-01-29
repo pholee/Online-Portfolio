@@ -19,7 +19,7 @@ export const Contact = () => {
                   href="https://www.linkedin.com/in/pholee"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl md:text-2xl text-text-2 hover:text-text-1 transition-colors"
+                  className="text-xl md:text-2xl text-text-1 hover:scale-105 duration-200 ease-in-out"
                 >
                   Linkedin
                 </a>
@@ -27,13 +27,13 @@ export const Contact = () => {
                   href="https://github.com/pholee"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl md:text-2xl text-text-2 hover:text-text-1 transition-colors"
+                  className="text-xl md:text-2xl text-text-1 hover:scale-105 duration-200 ease-in-out1"
                 >
                   Github
                 </a>
                 <a
                   href="mailto:pholee18@gmail.com"
-                  className="text-xl md:text-2xl text-text-2 hover:text-text-1 transition-colors"
+                  className="text-xl md:text-2xl text-text-1 hover:scale-105 duration-200 ease-in-out"
                 >
                   Email
                 </a>
