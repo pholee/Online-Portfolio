@@ -1,7 +1,7 @@
 import { RevealOnScroll } from "../RevealOnScroll";
 
 export const About = () => {
-  const developmentSkills = ["Python", "Java", "SQL", "HTML/CSS", "Django", "React", "TailwindCSS"];
+  const developmentSkills = ["Python", "Java", "SQL", "HTML/CSS", "React", "TailwindCSS"];
   const toolsSkills = ["Git", "Figma"];
   const workExperience = [
     {
@@ -25,28 +25,7 @@ export const About = () => {
       description:
         "Constructed and soldered flight circuits. Developed data collection software to access remote flight information.",
     },
-    /*{
-      role: "IEEE End of Line competition 2024",
-      company: "City St.George's, University of London",
-      period: "Oct 2024 - Dec 2024",
-      description:
-        "Led a team in a robotics competition to build and code an autonomous robot using arduino.",
-    },*/
-    /*{
-      role: "Data Analyst Intern",
-      company: "Meta",
-      period: "Oct 2024 - Oct 2024",
-      description:
-        "Conducted exploratory data analysis on a set of data, producing a professional report based on a given business scenario.",
-    },*/
-    /*{
-      role: "Course Representative",
-      company:
-        "City St.George's, University of London & University of Westminster",
-      period: "2023 - Present",
-      description:
-        "Collected and analyzed feedback from students, summarizing and presenting key insights during Student-Staff Liaison meetings.",
-    },*/
+
   ];
 
   return (
@@ -73,7 +52,7 @@ export const About = () => {
                       {developmentSkills.map((tech, key) => (
                         <span
                           key={key}
-                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
+                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm"
                         >
                           {tech}
                         </span>
@@ -87,7 +66,7 @@ export const About = () => {
                       {toolsSkills.map((tech, key) => (
                         <span
                           key={key}
-                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
+                          className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm"
                         >
                           {tech}
                         </span>
@@ -107,7 +86,7 @@ export const About = () => {
                       BSc in Computer Science
                     </span>
                     - City St.George&apos;s University of London 
-                    (2024-2027)
+                    (2024-2028)
                   </p>
                 </ul>
               </div>
