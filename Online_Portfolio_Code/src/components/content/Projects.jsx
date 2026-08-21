@@ -34,6 +34,7 @@ export const Projects = () => {
                   <a
                     href="https://github.com/pholee/Online-Portfolio"
                     target="_blank"
+                    rel="noreferrer"
                     className="text-sm text-accent-text hover:text-accent-text/60 transition-colors"
                   >
                     View Project →
@@ -66,6 +67,7 @@ export const Projects = () => {
                   <a
                     href="https://github.com/pholee/CityEngine-2D-Game"
                     target="_blank"
+                    rel="noreferrer"
                     className="text-sm text-accent-text hover:text-accent-text/60 transition-colors"
                   >
                     View Project →
@@ -97,6 +99,7 @@ export const Projects = () => {
                   <a
                     href="https://www.hoomanz.game/"
                     target="_blank"
+                    rel="noreferrer"
                     className="text-sm text-accent-text hover:text-accent-text/60 transition-colors"
                   >
                     View Project →
