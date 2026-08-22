@@ -1,94 +1,53 @@
-export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
+import { useScrollNav } from "../hooks/useScrollNav";
 
-    {/* Scroll on click */}
-    const scrollToSection = (id) => {
-      const section = document.querySelector(id);
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      }
-      setMenuOpen(false);
-    };
+export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
+  const scrollTo = useScrollNav();
+
+  const goTo = (id) => {
+    scrollTo(id);
+    setMenuOpen(false);
+  };
+
+  const links = [
+    { id: "#home", label: "Home" },
+    { id: "#about", label: "About" },
+    { id: "#projects", label: "Projects" },
+    { id: "#contact", label: "Contact" },
+  ];
 
   return (
     <div
       className={`
-                    fixed top-0 left-0 w-full bg-background/80 z-40 flex flex-col items-center justify-center 
-                    transition-all duration-300 ease-in-out
-                    ${
-                      menuOpen
-                        ? "h-screen opacity-100 pointer-events-auto"
-                        : "h-0 opacity-0 pointer-events-none"
-                    }
-                `}
+        flip-menu fixed inset-0 top-19 z-40 bg-background flex flex-col items-start justify-center gap-[1.6rem] px-[var(--pad)]
+        transition-opacity duration-300 ease-in-out
+        ${menuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"}
+      `}
     >
-      <button
-        className="absolute top-8 right-8.5 text-3xl focus:outline-none cursor-pointer"
-        onClick={() => setMenuOpen(false)}
-        aria-label="Close menu"
-      >
-        &times;
-      </button>
-
-      <a
-        onClick={() => scrollToSection("#home")}
-        className={`text-2xl my-4 transform transition-transform duration-300
-                ${
-                  menuOpen
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-5"
-                }
-            `}
-      >
-        Home
-      </a>
-      <a
-        onClick={() => scrollToSection("#about")}
-        className={`text-2xl my-4 transform transition-transform duration-300
-                ${
-                  menuOpen
-                    ? "opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-5"
-                }
-            `}
-      >
-        About
-      </a>
-      <a
-        onClick={() => scrollToSection("#projects")}
-        className={`text-2xl my-4 transform transition-transform duration-300
-            ${
-              menuOpen
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-5"
-            }
-        `}
-      >
-        Projects
-      </a>
-      <a
-        onClick={() => scrollToSection("#contact")}
-        className={`text-2xl my-4 transform transition-transform duration-300
-            ${
-              menuOpen
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-5"
-            }
-        `}
-      >
-        Contact
-      </a>
+      {links.map((link, index) => (
+        <a
+          key={link.id}
+          onClick={() => goTo(link.id)}
+          className={`flip-link cursor-pointer font-display font-bold text-2xl flex items-baseline gap-2 ${
+            menuOpen ? "is-open" : ""
+          }`}
+          style={{ transitionDelay: menuOpen ? `${50 + index * 60}ms` : "0ms" }}
+        >
+          <i className="not-italic font-mono text-sm text-accent-text">
+            {String(index + 1).padStart(2, "0")}
+          </i>
+          {link.label}
+        </a>
+      ))}
       <a
         href="/Online-Portfolio/Phoebe_Lee_CV.pdf"
         target="_blank"
-        className={`text-2xl my-4 transform transition-transform duration-300
-            ${
-              menuOpen
-                ? "opacity-100 translate-y-0"
-                : "opacity-0 translate-y-5"
-            }
-        `}
+        className={`flip-link font-display font-bold text-2xl flex items-baseline gap-2 ${
+          menuOpen ? "is-open" : ""
+        }`}
+        style={{ transitionDelay: menuOpen ? `${50 + links.length * 60}ms` : "0ms" }}
         onClick={() => setMenuOpen(false)}
       >
+        <i className="not-italic font-mono text-sm text-accent-text">05</i>
         Resume
       </a>
     </div>

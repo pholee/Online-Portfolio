@@ -1,144 +1,56 @@
+import { Link } from "react-router";
 import { RevealOnScroll } from "../RevealOnScroll";
+import { projects } from "../../data/projects";
 
 export const Projects = () => {
   return (
-    <section id="projects" className="mb-12 md:mb-26 p-8">
+    <section id="projects" className="py-[var(--band-y)]">
       <RevealOnScroll>
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-[var(--container)] mx-auto px-[var(--pad)]">
           {/* Heading */}
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8">Featured Projects</h2>
-
-          {/* Projects grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {/* 1 */}
-            <div className="flex flex-col h-full p-6 rounded-xl border border-text-1/10 hover:-translate-y-1 hover:border-accent-text/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-2">
-                This Portfolio Website
-              </h3>
-              <p className="text-text-2 text-sm sm:text-md mb-4">
-                Simple portfolio website designed by me.
-              </p>
-              <div className="mt-auto">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {["React", "TailwindCSS", "Figma"].map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                {/* Feature 1 */}
-                <div className="flex justify-between items-center">
-                  <a
-                    href="https://github.com/pholee/Online-Portfolio"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-sm text-accent-text hover:text-accent-text/60 transition-colors"
-                  >
-                    View Project →
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* 2 */}
-            <div className="flex flex-col h-full p-6 rounded-xl border border-text-1/10 hover:-translate-y-1 hover:border-accent-text/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-2">
-                2D Platformer Game
-              </h3>
-              <p className="text-text-2 text-sm sm:text-md mb-4">
-                A retelling of Little Red Riding Hood in a small,
-                story based 2D-platformer coded in java.
-              </p>
-              <div className="mt-auto">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {["Java", "CityEngine"].map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                {/* Feature 2 */}
-                <div className="flex justify-between items-center">
-                  <a
-                    href="https://github.com/pholee/CityEngine-2D-Game"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-sm text-accent-text hover:text-accent-text/60 transition-colors"
-                  >
-                    View Project →
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* 3 */}
-            <div className="flex flex-col h-full p-6 rounded-xl border border-text-1/10 hover:-translate-y-1 hover:border-accent-text/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-2">
-                hoomanz.game
-              </h3>
-              <p className="text-text-2 text-sm sm:text-md mb-4">
-                Designed website UX along with a small embedded iFrame for users to submit their own character designs to feature in the game Hoomanz!
-              </p>
-              <div className="mt-auto">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {["Figma", "Wireframing", "Userflows"].map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                {/* Feature 3 */}
-                <div className="flex justify-between items-center">
-                  <a
-                    href="https://www.hoomanz.game/"
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-sm text-accent-text hover:text-accent-text/60 transition-colors"
-                  >
-                    View Project →
-                  </a>
-                </div>
-              </div>
-            </div>
-            {/* 4 */}
-            <div className="flex flex-col h-full p-6 rounded-xl border border-text-1/10 hover:-translate-y-1 hover:border-accent-text/30 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-              <h3 className="text-lg sm:text-xl font-bold mb-2">
-                Koffeekickstart
-              </h3>
-              <p className="text-text-2 text-sm sm:text-md mb-4">
-                A whacky, personalised employee onboarding website for Koffeecup from start to finish. 
-              </p>
-              <div className="mt-auto">
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {["Figma", "Wireframing", "Userflows", "React", "TailwindCSS"].map((tech, key) => (
-                    <span
-                      key={key}
-                      className="bg-accent-text/10 text-accent-text py-1 px-3 rounded-full text-xs sm:text-sm hover:bg-accent-text/20"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-                {/* Feature 4 */}
-                <div className="flex justify-between items-center">
-                  <a
-                    className="text-sm"
-                  >
-                    Coming July 2026
-                  </a>
-                </div>
-              </div>
-            </div>
+          <div className="flex items-baseline justify-between gap-4 mb-[var(--gap-section)] flex-wrap">
+            <h2 className="font-display font-extrabold text-3xl sm:text-4xl">
+              Selected Work
+            </h2>
+            <p className="font-mono text-xs tracking-widest uppercase text-text-3">
+              2024 — 2026
+            </p>
           </div>
 
-          {/* View all button soon*/}
+          {/* Project rows */}
+          <div className="border-t border-text-1/10">
+            {projects.map((project, index) => (
+              <Link
+                key={project.slug}
+                to={`/work/${project.slug}`}
+                className={`group grid grid-cols-[2.5rem_1fr] sm:grid-cols-[2.5rem_1fr_auto] gap-x-5 gap-y-2 items-center py-[var(--gap-row-project)] border-b border-text-1/10 ${
+                  project.isSoon ? "opacity-70" : ""
+                }`}
+              >
+                <span className="font-mono text-xs text-text-3">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span className="font-display font-bold text-2xl sm:text-3xl md:text-4xl group-hover:text-accent-text transition-colors">
+                  {project.title}
+                </span>
+                <span className="col-start-2 sm:col-start-3 font-mono text-xs sm:text-right text-text-2">
+                  {project.statusLabel && (
+                    <span className="block text-text-1 font-medium mb-1">
+                      {project.statusLabel}
+                    </span>
+                  )}
+                  {project.projectType}
+                </span>
+              </Link>
+            ))}
+          </div>
+
+          {/* View all */}
+          <div className="flex justify-end pt-[clamp(1.5rem,3vw,2rem)]">
+            <a className="font-mono text-sm uppercase tracking-wide cursor-pointer hover:text-accent-text transition-colors">
+              All Projects <span className="text-accent-text">&rarr;</span>
+            </a>
+          </div>
         </div>
       </RevealOnScroll>
     </section>

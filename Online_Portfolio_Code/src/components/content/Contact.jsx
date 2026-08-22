@@ -1,53 +1,67 @@
+import { useScrollNav } from "../../hooks/useScrollNav";
+
 export const Contact = () => {
+    const scrollTo = useScrollNav();
     return (
-      <section id="contact" className="">
+      <section id="contact" className="border-t border-text-1/10">
         <div
           className="relative h-[500px] md:h-[700px]"
           style={{ clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)" }}
         >
 
-          <div className="fixed bottom-0 w-full h-[500px] md:h-[700px] p-8 overflow-hidden">
+          <div className="fixed bottom-0 w-full h-[500px] md:h-[700px] overflow-hidden">
 
             {/* Background */}
-            <div className="absolute top-1/8 left-1/4 transform -translate-x-1/2 -translate-y-1/2 w-150 h-150 sm:w-200 sm:h-200 md:w-250 md:h-250 bg-accent-bg rounded-full blur-2xl -z-10"></div>
+            <div className="absolute top-[-10%] left-[8%] w-[min(50vw,520px)] h-[min(50vw,520px)] bg-accent-bg rounded-full blur-[90px] opacity-55 -z-10"></div>
 
-            <div className="h-full max-w-6xl mx-auto flex flex-col z-10">
+            <div className="relative z-[1] h-full max-w-[var(--container)] mx-auto px-[var(--pad)] py-[var(--contact-pad)] flex flex-col">
 
               {/* Menu */}
-              <div className="cursor-pointer inline-flex flex-col w-fit space-y-4 mt-4">
+              <div className="inline-flex flex-col w-fit gap-[.8rem]">
                 <a
                   href="https://www.linkedin.com/in/pholee"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl md:text-2xl text-text-1 hover:scale-105 duration-200 ease-in-out"
+                  className="group text-xl md:text-2xl text-text-1 hover:text-accent-text transition-colors"
                 >
-                  Linkedin
+                  LinkedIn{" "}
+                  <span className="inline-block text-accent-text transition-transform group-hover:translate-x-[.15em] group-hover:-translate-y-[.15em]">
+                    &#8599;
+                  </span>
                 </a>
                 <a
                   href="https://github.com/pholee"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-xl md:text-2xl text-text-1 hover:scale-105 duration-200 ease-in-out1"
+                  className="group text-xl md:text-2xl text-text-1 hover:text-accent-text transition-colors"
                 >
-                  Github
+                  GitHub{" "}
+                  <span className="inline-block text-accent-text transition-transform group-hover:translate-x-[.15em] group-hover:-translate-y-[.15em]">
+                    &#8599;
+                  </span>
                 </a>
                 <a
                   href="mailto:pholee18@gmail.com"
-                  className="text-xl md:text-2xl text-text-1 hover:scale-105 duration-200 ease-in-out"
+                  className="group text-xl md:text-2xl text-text-1 hover:text-accent-text transition-colors"
                 >
-                  Email
+                  Email{" "}
+                  <span className="inline-block text-accent-text transition-transform group-hover:translate-x-[.15em] group-hover:-translate-y-[.15em]">
+                    &#8599;
+                  </span>
                 </a>
               </div>
 
               {/* Footer */}
               <footer className="mt-auto">
               {/* Catchphrase */}
-              <h1 className="bottom-0 text-right text-6xl sm:text-7xl md:text-8xl lg:text-9xl font-semi-bold mb-6">
-                Get in touch
+              <h1 className="bottom-0 text-right font-display font-black uppercase leading-[0.94] text-6xl sm:text-7xl md:text-8xl lg:text-9xl mb-5">
+                Get in
+                <br />
+                touch
               </h1>
 
                 {/* Divider */}
-                <hr className="w-full mb-8" />
+                <hr className="w-full mb-5" />
 
                 {/* Footer info */}
                 <div className="flex justify-between">
@@ -69,11 +83,13 @@ export const Contact = () => {
                     </div>
 
                     {/* Logo */}
-                    <img
-                      src={"/Online-Portfolio/PL-logo-l.svg"}
-                      alt="PL-Logo"
-                      className="h-15 md:h-20 flex-shrink-0 dark:invert"
-                    />                   
+                    <a onClick={() => scrollTo("#home")} className="cursor-pointer" aria-label="Back to top">
+                      <img
+                        src={"/Online-Portfolio/PL-logo-l.svg"}
+                        alt="PL-Logo"
+                        className="h-15 md:h-20 flex-shrink-0 logo-invert"
+                      />
+                    </a>
                   </div>
                 </div>
               </footer>
@@ -83,4 +99,3 @@ export const Contact = () => {
       </section>
     );
   };
-  

@@ -13,8 +13,9 @@
     "deploy": "gh-pages -d dist -r https://github.com/pholee/Online-Portfolio.git"
   },
   "dependencies": {
-    "@fontsource/raleway": "^5.2.5",
-    "@fontsource/roboto": "^5.2.5",
+    "@fontsource/hanken-grotesk": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/unbounded": "^5.3.0",
     "@tailwindcss/vite": "^4.0.15",
     "autoprefixer": "^10.4.21",
     "emailjs-com": "^3.2.0",

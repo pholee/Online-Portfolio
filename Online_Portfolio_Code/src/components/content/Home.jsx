@@ -1,64 +1,41 @@
 import { RevealOnScroll } from "../RevealOnScroll";
+import { useScrollNav } from "../../hooks/useScrollNav";
 
 export const Home = () => {
+  const scrollTo = useScrollNav();
+
   return (
-    <section id="home" className="min-h-dvh p-8">
+    <section id="home" className="relative overflow-hidden py-[var(--band-y)]">
       <RevealOnScroll>
         {/* Background */}
-        <div className="absolute top-1/5 right-0 w-100 h-100 sm:w-125 sm:h-125 md:w-175 md:h-175 bg-accent-bg rounded-full blur-2xl -z-10"></div>
+        <div className="absolute top-[-15%] right-[-12%] w-[min(60vw,640px)] h-[min(60vw,640px)] bg-accent-bg rounded-full blur-[90px] opacity-60 -z-10"></div>
 
-        <div className="max-w-6xl mx-auto text-left flex flex-col z-10 min-h-dvh">
-          {/* Logo and name container */}
-          <div className="relative left-0 mb-20 flex">
-            {/* Logo */}
-            <img
-              src={"/Online-Portfolio/PL-logo-l.svg"}
-              alt="PL-Logo"
-              className="h-60 md:h-80 dark:invert"
-            />
+        <div className="relative z-[1] max-w-[var(--container)] mx-auto px-[var(--pad)]">
+          <p className="font-mono text-[.72rem] tracking-widest uppercase text-text-3">
+            UX &amp; Front-End
+          </p>
 
-            {/* Name */}
-            <div className="h-55 md:h-82 grid grid-cols-2">
-              {/* Phoebe */}
-              <div className="grid grid-rows-6">
-                {["P", "H", "O", "E", "B", "E"].map((letter, index) => (
-                  <div key={index} className="ml-4">
-                    <p className="font-mono text-4xl md:text-5xl font-extrablack">
-                      {letter}
-                    </p>
-                  </div>
-                ))}
-              </div>
-              {/* Lee */}
-              <div className="h-30 md:h-41 grid grid-rows-3">
-                {["L", "E", "E"].map((letter, index) => (
-                  <div key={index} className="ml-2">
-                    <p className="font-mono text-4xl md:text-5xl font-extrablack">
-                      {letter}
-                    </p>
-                  </div>
-                ))}
-              </div>
+          <h1 className="font-display font-black uppercase leading-[0.94] tracking-[-0.01em] text-[clamp(3rem,11vw,8rem)] mt-[0.6em]">
+            Systems
+            <br />
+            Made
+            <br />
+            Intuitive
+          </h1>
+
+          <div className="mt-[var(--gap-section)] max-w-[56ch]">
+            {/* Reserved space — bio intentionally removed, kept for layout */}
+            <p aria-hidden="true" className="text-[clamp(1.05rem,1.8vw,1.2rem)] min-h-[6em] m-0"></p>
+
+            <div className="flex flex-wrap gap-[1.75rem] mt-[1.5rem] font-mono text-[.82rem] uppercase tracking-[.06em]">
+              <a onClick={() => scrollTo("#projects")} className="cursor-pointer hover:text-accent-text transition-colors">
+                Selected Work <span className="text-accent-text">&rarr;</span>
+              </a>
+              <a onClick={() => scrollTo("#contact")} className="cursor-pointer hover:text-accent-text transition-colors">
+                Get in Touch <span className="text-accent-text">&rarr;</span>
+              </a>
             </div>
           </div>
-
-          <div className="mt-auto">
-            {/* Heading */}
-            <h1 className="font-semibold text-3xl md:text-4xl mb-4">Hello!</h1>
-
-            {/* Paragraph */}
-            <p className="text-text-2 text-sm sm:text-md sm:text-lg mb-8 max-w-2xl">
-              I’m Phoebe, a second-year Computer Science student dedicated to crafting intuitive and visually
-              compelling computing systems. As I delve into various disciplines
-              within computer science, I discover that every challenge presents an
-              opportunity to apply creativity. When I’m not at my desk, you’ll find me tending to my ever-growing
-              collection of houseplants or out on the trails, hiking and enjoying
-              nature.
-            </p>
-            
-            {/* Divider */}
-            <hr className="w-full md:mb-16 -z-20 relative"/>
-          </div>  
         </div>
       </RevealOnScroll>
     </section>
