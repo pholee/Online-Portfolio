@@ -12,14 +12,12 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
 
   const links = [
     { id: "#home", label: "Home" },
-    { id: "#about", label: "About" },
     { id: "#projects", label: "Projects" },
     { id: "#contact", label: "Contact" },
   ];
 
   const themeButtonClass = (pressed) =>
-    `bg-transparent border px-[.6rem] py-[.35rem] uppercase cursor-pointer transition-colors duration-200 ${
-      pressed ? "text-text-1 border-accent-text" : "text-text-3 border-text-1/10"
+    `bg-transparent border px-[.6rem] py-[.35rem] uppercase cursor-pointer transition-colors duration-200 ${pressed ? "text-text-1 border-accent-text" : "text-text-3 border-text-1/10"
     }`;
 
   return (
@@ -53,9 +51,10 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
           <a
             href="/Online-Portfolio/Phoebe_Lee_CV.pdf"
             target="_blank"
+            rel="noreferrer"
             className="flex items-baseline gap-1.5 text-text-2 hover:text-accent-text transition-colors"
           >
-            <i className="not-italic font-mono text-xs text-accent-text">05</i>
+            <i className="not-italic font-mono text-xs text-accent-text">04</i>
             Resume
           </a>
         </nav>

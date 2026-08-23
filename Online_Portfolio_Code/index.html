@@ -6,6 +6,15 @@
     <link rel="icon" href="/PL-logo-d.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Phoebe Lee</title>
+    <style>
+      /* Duplicated from index.css's --color-background tokens: applied inline
+         so the correct background paints on the very first frame, before the
+         stylesheet loads — otherwise the browser's default white shows first. */
+      html, body { background: #F3EFE7; }
+      @media (prefers-color-scheme: dark) {
+        html, body { background: #0B0A10; }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

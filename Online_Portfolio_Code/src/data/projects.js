@@ -1,4 +1,5 @@
 export const projects = [
+  /*
     {
     slug: "seven-yanbu",
     title: "REDACTED",
@@ -21,8 +22,9 @@ export const projects = [
       "Quote",
     quoteText: "Placeholder — add a line from the client here.",
     quoteAttr: "— placeholder",
-  },
-      {
+    },
+  */
+  {
     slug: "alia-lavery-com",
     title: "AliaLavery.com",
     titleBreak: ["AliaLavery", ".com"],
@@ -47,14 +49,14 @@ export const projects = [
     quoteAttr: "— placeholder",
   },
   {
-    slug: "koffeekickstart",
-    title: "Koffeekickstart",
-    titleBreak: ["Koffee", "Kickstart"],
+    slug: "koffeekickstart-net",
+    title: "koffeekickstart.net",
+    titleBreak: ["Koffee", "Kickstart", ".net"],
     projectType: "Web development",
     tools: ["Figma", "Wireframing", "React"],
     linkLabel: null,
     linkHref: null,
-    role: "UX Design & Front-End",
+    role: "Design & Development",
     intro:
       "A personalised onboarding experience for new Koffeecup employees, from early wireframes through to a working React build.",
     gallery: [
@@ -76,7 +78,7 @@ export const projects = [
     tools: ["Figma", "Wireframing", "User Flows"],
     linkLabel: "Visit Live Site",
     linkHref: "https://www.hoomanz.game/",
-    role: "UX Design & Front-End",
+    role: "UX Design",
     intro:
       "UX and front-end support for Hoomanz, including the flow that lets players submit their own character designs to be featured in-game.",
     gallery: [
@@ -97,7 +99,7 @@ export const projects = [
     tools: ["Java", "CityEngine"],
     linkLabel: "View on GitHub",
     linkHref: "https://github.com/pholee/CityEngine-2D-Game",
-    role: "Solo Developer",
+    role: "Design & Development",
     intro:
       "A small, story-driven platformer retelling Little Red Riding Hood, built solo in Java. The brief was self-imposed: ship one complete, playable level with its own art direction rather than a tech demo.",
     gallery: ["Level 1 — the woods", "Enemy encounter", "Title screen"],

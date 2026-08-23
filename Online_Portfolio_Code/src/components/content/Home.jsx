@@ -24,15 +24,12 @@ export const Home = () => {
           </h1>
 
           <div className="mt-[var(--gap-section)] max-w-[56ch]">
-            {/* Reserved space — bio intentionally removed, kept for layout */}
+            {/* Reserved space */}
             <p aria-hidden="true" className="text-[clamp(1.05rem,1.8vw,1.2rem)] min-h-[6em] m-0"></p>
 
             <div className="flex flex-wrap gap-[1.75rem] mt-[1.5rem] font-mono text-[.82rem] uppercase tracking-[.06em]">
-              <a onClick={() => scrollTo("#projects")} className="cursor-pointer hover:text-accent-text transition-colors">
-                Selected Work <span className="text-accent-text">&rarr;</span>
-              </a>
-              <a onClick={() => scrollTo("#contact")} className="cursor-pointer hover:text-accent-text transition-colors">
-                Get in Touch <span className="text-accent-text">&rarr;</span>
+              <a onClick={() => scrollTo("#about")} className="cursor-pointer hover:text-accent-text transition-colors">
+                About Me <span className="text-accent-text">&rarr;</span>
               </a>
             </div>
           </div>

@@ -10,13 +10,13 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
 
   const links = [
     { id: "#home", label: "Home" },
-    { id: "#about", label: "About" },
     { id: "#projects", label: "Projects" },
     { id: "#contact", label: "Contact" },
   ];
 
   return (
     <div
+      inert={!menuOpen}
       className={`
         flip-menu fixed inset-0 top-19 z-40 bg-background flex flex-col items-start justify-center gap-[1.6rem] px-[var(--pad)]
         transition-opacity duration-300 ease-in-out
@@ -41,13 +41,14 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
       <a
         href="/Online-Portfolio/Phoebe_Lee_CV.pdf"
         target="_blank"
+        rel="noreferrer"
         className={`flip-link font-display font-bold text-2xl flex items-baseline gap-2 ${
           menuOpen ? "is-open" : ""
         }`}
         style={{ transitionDelay: menuOpen ? `${50 + links.length * 60}ms` : "0ms" }}
         onClick={() => setMenuOpen(false)}
       >
-        <i className="not-italic font-mono text-sm text-accent-text">05</i>
+        <i className="not-italic font-mono text-sm text-accent-text">04</i>
         Resume
       </a>
     </div>

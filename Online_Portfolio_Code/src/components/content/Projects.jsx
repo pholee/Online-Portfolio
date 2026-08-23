@@ -23,9 +23,8 @@ export const Projects = () => {
               <Link
                 key={project.slug}
                 to={`/work/${project.slug}`}
-                className={`group grid grid-cols-[2.5rem_1fr] sm:grid-cols-[2.5rem_1fr_auto] gap-x-5 gap-y-2 items-center py-[var(--gap-row-project)] border-b border-text-1/10 ${
-                  project.isSoon ? "opacity-70" : ""
-                }`}
+                className={`group grid grid-cols-[2.5rem_1fr] sm:grid-cols-[2.5rem_1fr_auto] gap-x-5 gap-y-2 items-center py-[var(--gap-row-project)] border-b border-text-1/10 ${project.isSoon ? "opacity-70" : ""
+                  }`}
               >
                 <span className="font-mono text-xs text-text-3">
                   {String(index + 1).padStart(2, "0")}
