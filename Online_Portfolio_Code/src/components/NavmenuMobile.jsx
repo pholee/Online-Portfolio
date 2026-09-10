@@ -39,7 +39,7 @@ export const NavmenuMobile = ({ menuOpen, setMenuOpen }) => {
         </a>
       ))}
       <a
-        href="/Online-Portfolio/Phoebe_Lee_CV.pdf"
+        href="/Online-Portfolio/Phoebe_Lee_Resume.pdf"
         target="_blank"
         rel="noreferrer"
         className={`flip-link font-display font-bold text-2xl flex items-baseline gap-2 ${
