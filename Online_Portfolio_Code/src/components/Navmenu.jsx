@@ -49,7 +49,7 @@ export const Navmenu = ({ menuOpen, setMenuOpen }) => {
             </a>
           ))}
           <a
-            href="/Online-Portfolio/Phoebe_Lee_CV.pdf"
+            href="/Online-Portfolio/Phoebe_Lee_Resume.pdf"
             target="_blank"
             rel="noreferrer"
             className="flex items-baseline gap-1.5 text-text-2 hover:text-accent-text transition-colors"

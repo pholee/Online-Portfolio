@@ -1,8 +1,9 @@
+import { useState } from "react";
 import { RevealOnScroll } from "../RevealOnScroll";
-import { useScrollNav } from "../../hooks/useScrollNav";
+import { AboutModal } from "../AboutModal";
 
 export const Home = () => {
-  const scrollTo = useScrollNav();
+  const [aboutOpen, setAboutOpen] = useState(false);
 
   return (
     <section id="home" className="relative overflow-hidden py-[var(--band-y)]">
@@ -28,13 +29,14 @@ export const Home = () => {
             <p aria-hidden="true" className="text-[clamp(1.05rem,1.8vw,1.2rem)] min-h-[6em] m-0"></p>
 
             <div className="flex flex-wrap gap-[1.75rem] mt-[1.5rem] font-mono text-[.82rem] uppercase tracking-[.06em]">
-              <a onClick={() => scrollTo("#about")} className="cursor-pointer hover:text-accent-text transition-colors">
+              <a onClick={() => setAboutOpen(true)} className="cursor-pointer hover:text-accent-text transition-colors">
                 About Me <span className="text-accent-text">&rarr;</span>
               </a>
             </div>
           </div>
         </div>
       </RevealOnScroll>
+      <AboutModal open={aboutOpen} onClose={() => setAboutOpen(false)} />
     </section>
   );
 };

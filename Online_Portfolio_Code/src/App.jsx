@@ -9,7 +9,6 @@ import { Navmenu } from "./components/Navmenu";
 import { NavmenuMobile } from "./components/NavmenuMobile";
 import { Marquee } from "./components/Marquee";
 import { Home } from "./components/content/Home";
-import { About } from "./components/content/About";
 import { Projects } from "./components/content/Projects";
 import { Contact } from "./components/content/Contact";
 import { CaseStudy } from "./components/content/CaseStudy";
@@ -54,7 +53,6 @@ function MainPage() {
     <>
       <Home />
       <Marquee />
-      <About />
       <Projects />
       <Contact />
     </>
