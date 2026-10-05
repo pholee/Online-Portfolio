@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 import { getProjectBySlug, getNextProject } from "../../data/projects";
 import { ProjectDevice } from "../devices/ProjectDevice";
+import { CaseStudySections } from "./CaseStudySections";
 
 export const CaseStudy = () => {
   const { slug } = useParams();
@@ -92,14 +93,9 @@ export const CaseStudy = () => {
         </div>
       </div>
 
-      {/* Story */}
-      <div className="mt-[clamp(80px,12vw,160px)] grid gap-[clamp(32px,6vw,96px)]">
-        <h2 className="text-[clamp(1.6rem,3.4vw,2.6rem)] leading-[1.08] tracking-[-.025em] font-normal max-w-[20ch] text-balance">
-          {project.sectionHeading}
-        </h2>
-        <p className="text-text-2 text-[1.1rem] max-w-[52ch]">
-          {project.sectionText}
-        </p>
+      {/* Story — the project's content blocks */}
+      <div className="mt-[clamp(80px,12vw,160px)]">
+        <CaseStudySections sections={project.sections} />
       </div>
 
       {/* Next project, or back home at the end of the list */}

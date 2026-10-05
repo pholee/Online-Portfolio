@@ -1,42 +1,59 @@
-import { Combo, Laptop, Pair } from "./Device";
-import { Mine, Room, Skyline, WoodsCanvas } from "./Artwork";
-import {
-  AliaScreen,
-  HoomanzDetailsScreen,
-  HoomanzUploadScreen,
-  InteriorScreen,
-  KoffeePhoneScreen,
-  KoffeeScreen,
-  MineScreen,
-  PlatformerScreen,
-  PortfolioScreen,
-  RedactedScreen,
-  StarCityBuildScreen,
-  StarCityMapScreen,
-} from "./Screens";
+import { Combo, Laptop, Pair, Phone, Screenshot } from "./Device";
+import { AliaScreen, RedactedScreen } from "./Screens";
 
-// Keyed by each project's `device` field in data/projects.js.
+// Keyed by each project's `device` field in data/projects.js. Screenshots live
+// in public/work/<slug>/; AliaLavery.com and Redacted have no screenshots yet,
+// so they show hand-built placeholder screens (Screens.jsx).
 const devices = {
-  koffee: () => <Combo laptop={<KoffeeScreen />} phone={<KoffeePhoneScreen />} />,
-  hoomanz: () => <Pair first={<HoomanzUploadScreen />} second={<HoomanzDetailsScreen />} />,
-  portfolio: () => <Laptop><PortfolioScreen /></Laptop>,
-  platformer: () => <Laptop><PlatformerScreen /></Laptop>,
-  alia: () => <Laptop><AliaScreen /></Laptop>,
-  starCity: () => <Pair first={<StarCityMapScreen />} second={<StarCityBuildScreen />} />,
-  interior: () => <Laptop><InteriorScreen /></Laptop>,
-  mine: () => <Laptop><MineScreen /></Laptop>,
-  redacted: () => <Laptop><RedactedScreen /></Laptop>,
+  koffee: () => (
+    <Combo
+      laptop={<Screenshot src="work/koffeekickstart-net/home.webp" alt="koffeekickstart.net home page" position="top" />}
+      phone={<Screenshot src="work/koffeekickstart-net/mobile-checklist.webp" alt="koffeekickstart.net onboarding checklist on mobile" fit="contain" background="#fff" />}
+    />
+  ),
+  hoomanz: () => (
+    <Combo
+      laptop={<Screenshot src="work/hoomanz-game/landing-desktop.webp" alt="hoomanz.game landing page on desktop" position="top" />}
+      phone={<Screenshot src="work/hoomanz-game/landing-mobile.webp" alt="hoomanz.game landing page on mobile" fit="top" background="#000" />}
+    />
+  ),
+  portfolio: () => (
+    <Laptop>
+      <Screenshot src="work/this-portfolio/code-editor.webp" alt="This portfolio's source code open in VS Code" position="top" />
+    </Laptop>
+  ),
+  platformer: () => (
+    <Laptop>
+      <Screenshot src="work/2d-platformer-game/forest.webp" alt="The forest level of the Little Red Riding Hood platformer" />
+    </Laptop>
+  ),
+  alia: () => (
+    <Laptop>
+      <AliaScreen />
+    </Laptop>
+  ),
+  starCity: () => (
+    <Phone landscape>
+      <Screenshot src="work/star-city/welcome.webp" alt="Star City welcome screen" />
+    </Phone>
+  ),
+  interior: () => (
+    <Pair
+      first={<Screenshot src="work/interior-designer/screen-1.webp" alt="Interior Designer: a customer's brief" fit="blur" />}
+      second={<Screenshot src="work/interior-designer/screen-5.webp" alt="Interior Designer: the customer review" fit="blur" />}
+    />
+  ),
+  redacted: () => (
+    <Laptop>
+      <RedactedScreen />
+    </Laptop>
+  ),
 };
 
 export const ProjectDevice = ({ device }) => devices[device]?.() ?? null;
 
-// Square artwork for the archive grid, keyed by each project's `thumb` field.
+// Placeholder square artwork for archive projects without an image yet.
 const thumbs = {
-  platformer: () => (
-    <div className="a-sprite">
-      <WoodsCanvas width={96} height={96} />
-    </div>
-  ),
   moodboard: () => (
     <div className="a-mood">
       <i></i>
@@ -44,9 +61,6 @@ const thumbs = {
       <i></i>
     </div>
   ),
-  starCity: () => <div className="a-svg"><Skyline /></div>,
-  interior: () => <div className="a-svg"><Room /></div>,
-  mine: () => <div className="a-svg"><Mine /></div>,
   redacted: () => (
     <div className="a-redact">
       <em>REDACTED</em>
@@ -54,4 +68,18 @@ const thumbs = {
   ),
 };
 
-export const ProjectThumb = ({ thumb }) => thumbs[thumb]?.() ?? null;
+// `thumb` is either an image path (relative to public/) or a placeholder name.
+export const ProjectThumb = ({ thumb }) => {
+  if (thumbs[thumb]) return thumbs[thumb]();
+  return (
+    <img
+      src={`${import.meta.env.BASE_URL.replace(/\/?$/, "/")}${thumb}`}
+      alt=""
+      width="800"
+      height="800"
+      loading="lazy"
+      decoding="async"
+      className="w-full h-full object-cover"
+    />
+  );
+};

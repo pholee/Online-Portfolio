@@ -3,3 +3,5 @@ dist
 .DS_Store
 *.log
 .claude
+# Full-size originals for the case study media (web copies live in public/work)
+media-source
