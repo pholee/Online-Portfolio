@@ -44,31 +44,23 @@ export const projects = [
       {
         type: "text",
         text: [
-          "Koffeecup had a known problem with staff turnover: [X% of] new hires were leaving within their first month. Onboarding had never been standardised — each department lead was trusted to run their own, so what a new starter learnt, and when, depended entirely on which team they joined.",
-          "HR asked me to design and build an in-house platform to support new hires. The brief was to standardise onboarding across the company — introducing past products, setting out the logins and tech each person needed, and pointing people to their department's tutorials — in something branded and stylish enough to reflect the studio. It also had to integrate with Notion, HiBob and Google, so the company's information could be pulled together in one place.",
+          "Koffeecup had a known problem with staff turnover: 30% new hires were leaving within their first month. Onboarding had never been standardised - each department lead was trusted to run their own, so what a new starter learnt, and when, depended entirely on which team they joined.",
+          "HR asked me to design and build an in-house platform to support new hires. The brief was to standardise onboarding across the company - introducing past products, setting out the logins and tech each person needed, and pointing people to their department's tutorials — in something branded and stylish enough to reflect the studio. It also had to integrate with Notion, HiBob and Google, so the company's information could be pulled together in one place.",
         ],
       },
       { type: "heading", text: "Asking new starters what was missing" },
       {
         type: "text",
         text:
-          "Before designing anything, I ran a short survey of [X] recent hires, asking what they wished they'd had in their first weeks. Three needs stood out:",
+          "Before designing anything, I ran a short survey of 4 recent hires, asking what they wished they'd had in their first weeks. Three needs stood out:",
       },
       {
         type: "list",
         items: [
           "A single onboarding checklist, so tasks could be tracked in one place rather than pieced together from emails and Slack messages.",
           "A clear reading list from Notion, so new starters knew which of Koffeecup's hundreds of documents were relevant to them.",
-          "A way to get to know their teammates — who they would be working with, and who was nearby, in a company spread across the UK, Poland and France.",
+          "A way to get to know their teammates - who they would be working with, and who was nearby, in a company spread across the UK, Poland and France.",
         ],
-      },
-      {
-        type: "image",
-        src: "work/koffeekickstart-net/home.webp",
-        alt: "koffeekickstart.net home page: a \"Kickstarting your journey\" welcome with illustrated Koffeecup team characters",
-        width: 2400,
-        height: 1535,
-        caption: "Home — the welcome page new starters land on",
       },
       { type: "heading", text: "From wireframes to a working build" },
       {
@@ -76,20 +68,11 @@ export const projects = [
         text:
           "Each need became its own page — Checklist, Documents and Team — alongside an HR page holding each new starter's personal details, role and office. I designed the wireframes in Figma, then built the site in React, integrating it with Notion, HiBob and Google so it drew on the systems the company already used.",
       },
-      {
-        type: "image",
-        src: "work/koffeekickstart-net/hr.webp",
-        alt: "koffeekickstart.net HR page showing a new starter's personal details, role and office",
-        width: 2400,
-        height: 1481,
-        caption: "HR — personal details, role and office in one place (contact details hidden)",
-      },
       { type: "heading", text: "The outcome" },
       {
         type: "text",
         text: [
           "All three needs from the survey shipped as pages on the live platform. Every new starter now follows the same onboarding path, and HR is notified when someone completes it, giving the team visibility of every step along the way.",
-          "[Add the impact here if you have it — e.g. X new starters onboarded since launch, or the change in first-month turnover.]",
         ],
       },
     ],
@@ -106,13 +89,13 @@ export const projects = [
     teaser:
       "A launch redesign for Koffeecup's game Hoomanz, including a web app that let players design their own outfit for its hero, Shoo.",
     intro:
-      "A launch redesign of hoomanz.game for Koffeecup's puzzle platformer — new navigation, a responsive layout, and an embedded web app that brought a Gamescom 2025 character competition to players everywhere.",
+      "A launch redesign of hoomanz.game for Koffeecup's puzzle platformer - new navigation, a responsive layout, and an embedded web app that brought a Gamescom 2025 character competition to players everywhere.",
     sections: [
       { type: "heading", text: "The brief" },
       {
         type: "text",
         text: [
-          "Hoomanz is a short, cosy puzzle platformer — around three hours long — in which players control Shoo, a small creature shooing away the hoomanz invading their planet. For the game's launch, Koffeecup asked me to redesign hoomanz.game: adding launch links, new information about the game including trailers, and space for community events.",
+          "Hoomanz is a short, cosy puzzle platformer in which players control Shoo, a small creature shooing away the hoomanz invading their planet. For the game's launch, Koffeecup asked me to redesign hoomanz.game: adding launch links, new information about the game including trailers, and space for community events.",
           "The existing site had difficult navigation and didn't adapt to mobile screens, so the redesign started from both.",
         ],
       },
@@ -123,27 +106,9 @@ export const projects = [
           "I introduced a new navigation header and designed the layout responsively from the start, working closely with two developers and iterating back and forth to resolve the details at each screen size. The launch links point players to all six storefronts: Steam, PlayStation 5, Xbox, Nintendo Switch, the Epic Games Store and macOS.",
       },
       {
-        type: "gallery",
-        caption: "Landing page on desktop and mobile",
-        items: [
-          {
-            src: "work/hoomanz-game/landing-desktop.webp",
-            alt: "Hoomanz landing page on desktop, with the game logo over key art of the characters",
-            width: 1982,
-            height: 1281,
-          },
-          {
-            src: "work/hoomanz-game/landing-mobile.webp",
-            alt: "Hoomanz landing page on mobile, listing the platforms the game is available on",
-            width: 766,
-            height: 1510,
-          },
-        ],
-      },
-      {
         type: "text",
         text:
-          "The site also leans into the game's personality, with micro-animations throughout and a live scare counter that tallies every time a player scares a hooman in-game — and yes, it really updates.",
+          "The site also leans into the game's personality, with micro-animations throughout and a live scare counter that tallies every time a player scares a hooman in-game - and yes, it really updates.",
       },
       { type: "heading", text: "Taking a Gamescom competition online" },
       {
@@ -179,118 +144,19 @@ export const projects = [
     ],
     device: "hoomanz",
   },
-  {
-    slug: "this-portfolio",
-    title: "This Portfolio",
-    projectType: "Web development",
-    year: "2024",
-    tools: ["React", "Tailwind CSS", "Figma"],
-    linkLabel: "View on GitHub",
-    linkHref: "https://github.com/pholee/Online-Portfolio",
-    teaser:
-      "A ground-up rebuild with fewer components, one token sheet and a lot more room.",
-    intro:
-      "A ground-up rebuild of this site: fewer components, one consistent accent system, and a lot more negative space. Every section pulls from the same small set of tokens rather than being styled screen by screen.",
-    sections: [
-      {
-        type: "heading",
-        text: "One system, every section",
-      },
-      {
-        type: "text",
-        text: "Instead of a page-by-page redesign, this started as a token sheet — two neutrals, two accents, two typefaces, one spacing scale — and every component on the site pulls from the same handful of decisions.",
-      },
-    ],
-    device: "portfolio",
-  },
 
-  // ---------- Archive ----------
-  {
-    slug: "2d-platformer-game",
-    archive: true,
-    title: "2D Platformer Game",
-    projectType: "Game development",
-    year: "2024",
-    tools: ["Java", "CityEngine"],
-    linkLabel: "View on GitHub",
-    linkHref: "https://github.com/pholee/2D-Platformer-Game",
-    intro:
-      "A small, story-driven platformer retelling Little Red Riding Hood, built solo in Java. The brief was self-imposed: ship one complete, playable level with its own art direction rather than a tech demo.",
-    sections: [
-      {
-        type: "heading",
-        text: "Designing a level like a scene",
-      },
-      {
-        type: "text",
-        text: "Each room was blocked out for pacing first — where the player should slow down, where a chase should start — before any art or enemy logic went in.",
-      },
-      {
-        type: "image",
-        src: "work/2d-platformer-game/forest.webp",
-        alt: "The forest level: platforms over a pixel-art forest, with a pig to collect",
-        width: 2000,
-        height: 1257,
-        caption: "The forest — platforming over the undergrowth",
-      },
-      {
-        type: "gallery",
-        items: [
-          {
-            src: "work/2d-platformer-game/title.webp",
-            alt: "Title screen reading \"Little Red Riding Hood — Press any key to start\"",
-            width: 2000,
-            height: 1257,
-            label: "Title screen",
-          },
-          {
-            src: "work/2d-platformer-game/clearing.webp",
-            alt: "A clearing with wolves near grandma's house, and a portal to the next area",
-            width: 2000,
-            height: 1257,
-            label: "The clearing",
-          },
-        ],
-      },
-    ],
-    device: "platformer",
-    thumb: "work/2d-platformer-game/thumb.webp",
-  },
-  /*
-  {
-    slug: "alia-lavery-com",
-    archive: true,
-    isSoon: true,
-    title: "AliaLavery.com",
-    projectType: "Web development",
-    year: "2027",
-    tools: ["React", "Tailwind CSS", "Figma"],
-    intro: "Coming soon.",
-    sections: [
-      {
-        type: "heading",
-        text: "From paper to product",
-      },
-      {
-        type: "text",
-        text: "An artist's portfolio, built to fit their style.",
-      },
-    ],
-    device: "alia",
-    thumb: "moodboard",
-  },
-  */
   {
     slug: "star-city",
-    archive: true,
     title: "Star City",
     projectType: "User experience",
     year: "2025",
     tools: ["Figma", "Wireframing"],
     linkLabel: "Play in Horizon Worlds",
     linkHref: "https://horizon.meta.com/world/1210055420890187/?hwsh=JyKmhJIgPZ",
+    teaser:
+      "Adapting a cosy VR life-sim on Meta's Horizon Worlds into a mobile-first game, with menus redesigned for tap and swipe.",
     intro:
-      "UX for Star City, a cosy life-sim on Meta's Horizon Worlds — adapting a game built for VR into a mobile-first experience, with its menus redesigned for tap and swipe.",
+      "UX for Star City, a cosy life-sim on Meta's Horizon Worlds - adapting a game built for VR into a mobile-first experience, with its menus redesigned for tap and swipe.",
     sections: [
       {
         type: "heading",
@@ -302,14 +168,6 @@ export const projects = [
           "Star City is a cosy life-sim game on Meta's Horizon Worlds platform. It began life as a VR game and had to be adapted into a mobile-first experience.",
           "I joined the project as its VR lifecycle was coming to an end. My task was to review the existing flows and wireframes, add the affordances mobile players needed, and update the design to suit a phone screen.",
         ],
-      },
-      {
-        type: "image",
-        src: "work/star-city/welcome.webp",
-        alt: "Star City welcome screen over the player's new house, with daily career tasks",
-        width: 1600,
-        height: 736,
-        caption: "Welcome — the first thing players see in their new home",
       },
       {
         type: "heading",
@@ -346,21 +204,12 @@ export const projects = [
         caption: "VR HUD — bottom menu flows",
       },
       {
-        type: "image",
-        src: "work/star-city/constellation-flows.webp",
-        alt: "Star City constellation feature flows",
-        width: 2400,
-        height: 1604,
-        fullSrc: "work/star-city/constellation-flows-full.webp",
-        caption: "Constellation feature flows",
-      },
-      {
         type: "heading",
         text: "Redesigning menus for touch",
       },
       {
         type: "text",
-        text: "The VR version relied on floating menus and diegetic menus — interfaces placed within the game world itself. I redesigned both for tap and swipe interactions, and added buttons and clearer affordances wherever an action had depended on VR controls, so players could see what was interactive and reach it comfortably on a phone.",
+        text: "The VR version relied on floating menus and diegetic menus - interfaces placed within the game world itself. I redesigned both for tap and swipe interactions, and added buttons and clearer affordances wherever an action had depended on VR controls, so players could see what was interactive and reach it comfortably on a phone.",
       },
       {
         type: "compare",
@@ -391,8 +240,65 @@ export const projects = [
       },
     ],
     device: "starCity",
-    thumb: "work/star-city/thumb.webp",
   },
+
+  // ---------- Archive ----------
+  {
+    slug: "this-portfolio",
+    archive: true,
+    title: "This Portfolio",
+    projectType: "Web development",
+    year: "2024",
+    tools: ["React", "Tailwind CSS", "Figma"],
+    linkLabel: "View on GitHub",
+    linkHref: "https://github.com/pholee/Online-Portfolio",
+    intro:
+      "A ground-up rebuild of this site: fewer components, one consistent accent system, and a lot more negative space. Every section pulls from the same small set of tokens rather than being styled screen by screen.",
+    sections: [
+    ],
+    device: "portfolio",
+    thumb: "work/this-portfolio/thumb.webp",
+  },
+  {
+    slug: "2d-platformer-game",
+    archive: true,
+    title: "2D Platformer Game",
+    projectType: "Game development",
+    year: "2024",
+    tools: ["Java", "CityEngine"],
+    linkLabel: "View on GitHub",
+    linkHref: "https://github.com/pholee/2D-Platformer-Game",
+    intro:
+      "A small, story-driven platformer retelling Little Red Riding Hood, built solo in Java. The brief was self-imposed: ship one complete, playable level with its own art direction rather than a tech demo.",
+    sections: [
+    ],
+    device: "platformer",
+    thumb: "work/2d-platformer-game/thumb.webp",
+  },
+  /*
+  {
+    slug: "alia-lavery-com",
+    archive: true,
+    isSoon: true,
+    title: "AliaLavery.com",
+    projectType: "Web development",
+    year: "2027",
+    tools: ["React", "Tailwind CSS", "Figma"],
+    intro: "Coming soon.",
+    sections: [
+      {
+        type: "heading",
+        text: "From paper to product",
+      },
+      {
+        type: "text",
+        text: "An artist's portfolio, built to fit their style.",
+      },
+    ],
+    device: "alia",
+    thumb: "moodboard",
+  },
+  */
   {
     slug: "interior-designer",
     archive: true,
@@ -401,15 +307,15 @@ export const projects = [
     year: "2026",
     tools: ["Figma", "Wireframing"],
     intro:
-      "Placeholder — add a one or two sentence summary of Interior Designer here.",
+      "Interior Designer is a short 20 minute house customisation experience on Meta's platform Horizon Worlds. Players earn furniture in a gatcha-like system while decorating a room for various fun and quirky clients.",
     sections: [
       {
         type: "heading",
-        text: "Placeholder — Interior Designer headline",
+        text: "Media gallery",
       },
       {
         type: "text",
-        text: "Placeholder — add the story of Interior Designer: the problem, what you designed, and what changed because of it.",
+        text: "Below are screenshots of the final game, a gameplay video and some prototypes of the room customisation system.",
       },
       {
         type: "image",

@@ -34,7 +34,7 @@ const devices = {
   ),
   starCity: () => (
     <Phone landscape>
-      <Screenshot src="work/star-city/welcome.webp" alt="Star City welcome screen" />
+      <Screenshot src="work/star-city/environment.webp" alt="Star City's town square with the in-game HUD" />
     </Phone>
   ),
   interior: () => (
