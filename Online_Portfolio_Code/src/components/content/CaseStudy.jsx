@@ -1,22 +1,30 @@
 import { useEffect } from "react";
-import { Link, useParams } from "react-router";
-import { RevealOnScroll } from "../RevealOnScroll";
+import { Link, useNavigate, useParams } from "react-router";
 import { getProjectBySlug, getNextProject } from "../../data/projects";
+import { ProjectDevice } from "../devices/ProjectDevice";
 
 export const CaseStudy = () => {
   const { slug } = useParams();
+  const navigate = useNavigate();
   const project = getProjectBySlug(slug);
 
+  // Back lands on this project's row / thumbnail, not the top of the page.
+  const goBack = () => navigate("/", { state: { scrollTo: `#${slug}` } });
+
   useEffect(() => {
-    window.scrollTo(0, 0);
-  }, [slug]);
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") navigate("/", { state: { scrollTo: `#${slug}` } });
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [navigate, slug]);
 
   if (!project) {
     return (
       <section className="p-8 min-h-dvh flex items-center justify-center">
         <div className="text-center">
           <p className="text-text-2 mb-4">That project doesn&apos;t exist.</p>
-          <Link to="/" className="text-accent-text underline">
+          <Link to="/" className="text-accent underline">
             Back home
           </Link>
         </div>
@@ -25,108 +33,86 @@ export const CaseStudy = () => {
   }
 
   const next = getNextProject(slug);
-  const titleLines = project.titleBreak || [project.title];
 
   return (
-    <section className="py-[clamp(1rem,4vw,2rem)]">
-      <div className="max-w-[var(--container)] mx-auto px-[var(--pad)]">
-        <RevealOnScroll key={slug}>
-          {/* Ghost title */}
-          <h1 className="text-outline font-display font-black uppercase leading-[0.94] tracking-[-0.01em] text-[clamp(2.4rem,9vw,6rem)] pb-[var(--gap-section)] break-words">
-            {titleLines.map((line, i) => (
-              <span key={i} className="block">
-                {line}
-              </span>
-            ))}
-          </h1>
+    <section key={slug} className="pt-[clamp(24px,4vw,48px)] pb-16">
+      <button
+        type="button"
+        onClick={goBack}
+        aria-label="Back to all work"
+        className="inline-grid place-items-center w-11 h-11 -ml-3 cursor-pointer text-text-3 hover:text-text-1 transition-colors"
+      >
+        <svg width="14" height="26" viewBox="0 0 14 26" fill="none" aria-hidden="true">
+          <path
+            d="M12.5 1.5 1.5 13l11 11.5"
+            stroke="currentColor"
+            strokeWidth="1.6"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          />
+        </svg>
+      </button>
 
-          {/* Meta row */}
-          <div className="flex flex-wrap items-start gap-[clamp(1.5rem,4vw,3rem)] py-6 border-y border-text-1/10 my-[var(--gap-section)]">
+      {/* Facts + device */}
+      <div className="animate-rise mt-[clamp(24px,5vw,64px)] grid grid-cols-1 min-[820px]:grid-cols-[minmax(0,4fr)_minmax(0,8fr)] gap-[clamp(32px,6vw,96px)] items-center">
+        <div className="text-[.95rem] leading-[1.45]">
+          <div className="mb-8">
+            <h1 className="text-base font-semibold">{project.title}</h1>
             <div>
-              <h4 className="font-bold text-xs uppercase tracking-wide text-text-3 mb-2">
-                Role
-              </h4>
-              <p>{project.role}</p>
+              {project.projectType} · {project.isSoon ? `Coming ${project.year}` : project.year}
             </div>
-            <div>
-              <h4 className="font-bold text-xs uppercase tracking-wide text-text-3 mb-2">
-                Tools
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {project.tools.map((tool) => (
-                  <span
-                    key={tool}
-                    className="font-mono text-xs border border-text-1/15 rounded-full px-3 py-1"
-                  >
-                    {tool.toUpperCase()}
-                  </span>
-                ))}
-              </div>
-            </div>
-            {project.linkHref && (
-              <a
-                href={project.linkHref}
-                target="_blank"
-                rel="noreferrer"
-                className="ml-auto font-mono text-sm uppercase tracking-wide self-center hover:text-accent-text transition-colors"
-              >
-                {project.linkLabel} <span className="text-accent-text">&rarr;</span>
-              </a>
-            )}
           </div>
 
-          {/* Intro */}
-          <p className="text-[clamp(1.1rem,2.2vw,1.35rem)] max-w-[42ch] mb-[var(--gap-stack)]">
-            {project.intro}
-          </p>
+          <p className="text-text-2 max-w-[36ch] mb-8">{project.intro}</p>
 
-          {/* Gallery */}
-          <p className="font-mono text-xs uppercase tracking-wide text-text-3 mb-3">
-            Placeholder imagery — swap in real screenshots.
-          </p>
-          <div className="flex gap-4 overflow-x-auto pb-2 mb-[var(--gap-stack)] [scrollbar-width:thin]">
-            {project.gallery.map((caption, i) => (
-              <div
-                key={caption}
-                className="gallery-placeholder shrink-0 w-[78vw] max-w-140 aspect-4/3 rounded border border-text-1/10 flex items-end"
-              >
-                <span className="font-mono text-xs uppercase tracking-wide p-3">
-                  Fig. {String(i + 1).padStart(2, "0")} — {caption}
-                </span>
-              </div>
+          <div className="text-text-3 mb-8">
+            <div className="font-mono text-[.7rem] tracking-[.06em] uppercase mb-1.5">Tools</div>
+            {project.tools.map((tool) => (
+              <div key={tool}>{tool}</div>
             ))}
           </div>
 
-          {/* Body section */}
-          <div className="max-w-[60ch] mb-[var(--gap-stack)]">
-            <h3 className="font-display font-bold text-2xl sm:text-3xl mb-4">
-              {project.sectionHeading}
-            </h3>
-            <p className="text-text-2 leading-relaxed">{project.sectionText}</p>
-          </div>
+          {project.linkHref && (
+            <a
+              href={project.linkHref}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex gap-[.4em] border-b border-line pb-0.5 hover:border-text-1 transition-colors"
+            >
+              {project.linkLabel} ↗
+            </a>
+          )}
+        </div>
 
-          {/* Quote */}
-          <blockquote className="border-l-2 border-accent-text pl-[clamp(1.25rem,3vw,2rem)] max-w-[52ch] mb-[var(--gap-stack)]">
-            <p className="font-display font-medium text-xl sm:text-2xl leading-snug mb-3">
-              {project.quoteText}
-            </p>
-            <span className="font-mono text-xs uppercase tracking-wide text-text-3">
-              {project.quoteAttr}
-            </span>
-          </blockquote>
+        <div className="min-w-0 max-[819px]:-order-1">
+          <ProjectDevice device={project.device} />
+        </div>
+      </div>
 
-          {/* Next project */}
-          <div className="border-t border-text-1/10 pt-[var(--gap-stack)] pb-[clamp(3rem,7vw,4.5rem)]">
-            <Link to={`/work/${next.slug}`} className="group block">
-              <span className="font-mono text-xs uppercase tracking-wide text-text-3 block mb-3">
-                Next Project
-              </span>
-              <span className="font-display font-extrabold leading-none text-4xl sm:text-6xl group-hover:text-accent-text transition-colors">
-                {next.title}
-              </span>
+      {/* Story */}
+      <div className="mt-[clamp(80px,12vw,160px)] grid gap-[clamp(32px,6vw,96px)]">
+        <h2 className="text-[clamp(1.6rem,3.4vw,2.6rem)] leading-[1.08] tracking-[-.025em] font-normal max-w-[20ch] text-balance">
+          {project.sectionHeading}
+        </h2>
+        <p className="text-text-2 text-[1.1rem] max-w-[52ch]">
+          {project.sectionText}
+        </p>
+      </div>
+
+      {/* Next project, or back home at the end of the list */}
+      <div className="mt-[clamp(80px,12vw,140px)] border-t border-line pt-6 flex justify-between gap-4 text-[.95rem]">
+        {next ? (
+          <>
+            <span className="text-text-3">Next</span>
+            <Link to={`/work/${next.slug}`} className="hover:text-accent transition-colors">
+              {next.title} →
             </Link>
-          </div>
-        </RevealOnScroll>
+          </>
+        ) : (
+          <Link to="/" className="ml-auto hover:text-accent transition-colors">
+            Back to home →
+          </Link>
+        )}
       </div>
     </section>
   );

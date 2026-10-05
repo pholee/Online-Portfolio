@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Favicon follows the browser's light / dark tab bar; the site itself is light only -->
     <link rel="icon" href="/PL-logo-l.svg" type="image/svg+xml" media="(prefers-color-scheme: light)" />
     <link rel="icon" href="/PL-logo-d.svg" type="image/svg+xml" media="(prefers-color-scheme: dark)" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,10 +11,7 @@
       /* Duplicated from index.css's --color-background tokens: applied inline
          so the correct background paints on the very first frame, before the
          stylesheet loads — otherwise the browser's default white shows first. */
-      html, body { background: #F3EFE7; }
-      @media (prefers-color-scheme: dark) {
-        html, body { background: #0B0A10; }
-      }
+      html, body { background: #FBF7F0; }
     </style>
   </head>
   <body>

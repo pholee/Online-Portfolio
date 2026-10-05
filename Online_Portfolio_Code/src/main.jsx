@@ -4,16 +4,11 @@ import { HashRouter } from 'react-router'
 import App from './App.jsx'
 import './index.css'
 
-import "@fontsource/unbounded/500.css"
-import "@fontsource/unbounded/700.css"
-import "@fontsource/unbounded/800.css"
-import "@fontsource/unbounded/900.css"
-import "@fontsource/hanken-grotesk/400.css"
-import "@fontsource/hanken-grotesk/500.css"
-import "@fontsource/hanken-grotesk/600.css"
-import "@fontsource/hanken-grotesk/700.css"
-import "@fontsource/ibm-plex-mono/400.css"
-import "@fontsource/ibm-plex-mono/500.css"
+import "@fontsource-variable/geist"
+import "@fontsource/geist-mono/400.css"
+import "@fontsource/geist-mono/500.css"
+import "@fontsource/instrument-serif/400.css"
+import "@fontsource/instrument-serif/400-italic.css"
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

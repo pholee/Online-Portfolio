@@ -23,7 +23,10 @@ export const useScrollNav = () => {
       }
       return;
     }
-    const el = document.querySelector(id);
+    // getElementById rather than querySelector — project slugs like
+    // "2d-platformer-game" start with a digit, which isn't a valid CSS id
+    // selector.
+    const el = document.getElementById(id.replace(/^#/, ""));
     if (!el) return;
     if (lenisRef?.current) {
       // Lenis 1.3's scrollTo doesn't resolve CSS-selector strings — pass the
