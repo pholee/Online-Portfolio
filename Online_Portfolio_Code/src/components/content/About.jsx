@@ -21,9 +21,8 @@ const education = [
 ];
 
 const elsewhere = [
-  { label: "Resume", href: "/Online-Portfolio/Phoebe_Lee_Resume.pdf" },
   { label: "LinkedIn", href: "https://www.linkedin.com/in/pholee" },
-  { label: "GitHub", href: "https://github.com/pholee" },
+  { label: "Resume", href: "/Online-Portfolio/Phoebe_Lee_Resume.pdf" },
 ];
 
 const Column = ({ heading, children }) => (
@@ -69,9 +68,12 @@ export const About = () => {
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              className="hover:text-accent transition-colors"
+              className="group hover:text-accent transition-colors"
             >
-              {link.label} ↗
+              {link.label}{" "}
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-[.15em] group-hover:-translate-y-[.15em]">
+                ↗
+              </span>
             </a>
           </li>
         ))}

@@ -1,11 +1,9 @@
 import { useScrollNav } from "../../hooks/useScrollNav";
 
-const RESUME_HREF = "/Online-Portfolio/Phoebe_Lee_Resume.pdf";
-
-const externalLinks = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/pholee" },
-  { label: "GitHub", href: "https://github.com/pholee" },
-  { label: "Resume", href: RESUME_HREF },
+const sections = [
+  { id: "#work", label: "Featured" },
+  { id: "#archive", label: "Archive" },
+  { id: "#about", label: "About" },
 ];
 
 export const Home = () => {
@@ -15,33 +13,21 @@ export const Home = () => {
     <section id="home">
       {/* Header */}
       <header className="animate-rise flex justify-between items-start gap-6 pt-[clamp(28px,5vw,56px)]">
-        <button
-          type="button"
-          onClick={() => scrollTo("#home")}
-          className="text-left cursor-pointer text-[clamp(1.25rem,2.2vw,1.6rem)] leading-[1.15] font-medium tracking-[-.01em]"
-        >
+        <p className="text-[clamp(1.25rem,2.2vw,1.6rem)] leading-[1.15] font-medium tracking-[-.01em]">
           Phoebe Lee
-          <span className="block text-text-3 font-normal">2026</span>
-        </button>
+          <span className="block text-text-3 font-normal">2024–2026</span>
+        </p>
 
-        <nav aria-label="Elsewhere" className="grid gap-0.5 text-[.9rem] text-text-3 min-[820px]:min-w-28">
-          <button
-            type="button"
-            onClick={() => scrollTo("#about")}
-            className="text-left cursor-pointer hover:text-text-1 transition-colors"
-          >
-            About
-          </button>
-          {externalLinks.map((link) => (
-            <a
-              key={link.label}
-              href={link.href}
-              target="_blank"
-              rel="noreferrer"
-              className="hover:text-text-1 transition-colors"
+        <nav aria-label="Primary" className="grid gap-0.5 text-[.9rem] text-text-3 min-[820px]:min-w-28">
+          {sections.map((section) => (
+            <button
+              key={section.id}
+              type="button"
+              onClick={() => scrollTo(section.id)}
+              className="text-left cursor-pointer hover:text-text-1 transition-colors"
             >
-              {link.label}
-            </a>
+              {section.label}
+            </button>
           ))}
         </nav>
       </header>

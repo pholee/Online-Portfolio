@@ -102,14 +102,14 @@ export const PortfolioScreen = () => (
   <div className="s-self">
     <div className="t">
       <b>
-        Phoebe Lee<span>2026</span>
+        Phoebe Lee<span>2024–2026</span>
       </b>
       <i>
+        Featured
+        <br />
+        Archive
+        <br />
         About
-        <br />
-        LinkedIn
-        <br />
-        GitHub
       </i>
     </div>
     <p>
