@@ -1,4 +1,4 @@
-import { Combo, Laptop, Pair, Phone, Screenshot } from "./Device";
+import { Combo, Laptop, Pair, PhoneWithHeadset, Screenshot } from "./Device";
 import { AliaScreen, RedactedScreen } from "./Screens";
 
 // Keyed by each project's `device` field in data/projects.js. Screenshots live
@@ -33,9 +33,9 @@ const devices = {
     </Laptop>
   ),
   starCity: () => (
-    <Phone landscape>
-      <Screenshot src="work/star-city/environment.webp" alt="Star City's town square with the in-game HUD" />
-    </Phone>
+    <PhoneWithHeadset
+      phone={<Screenshot src="work/star-city/environment.webp" alt="Star City's town square with the in-game HUD" />}
+    />
   ),
   interior: () => (
     <Pair

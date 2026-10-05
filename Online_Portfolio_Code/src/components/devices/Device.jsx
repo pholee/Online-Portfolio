@@ -100,6 +100,34 @@ export const Combo = ({ laptop, phone }) => (
   </div>
 );
 
+// A landscape phone with a Meta Quest 3 headset overlapping its lower-right
+// corner — for projects that span VR and mobile.
+// Soft "floor" shadow, matching the one baked into the laptop frame. Rendered
+// behind the devices so it never darkens a screen.
+const FloorShadow = ({ className }) => (
+  <div
+    aria-hidden="true"
+    className={`absolute -z-10 rounded-[50%] bg-[radial-gradient(closest-side,rgba(20,19,26,0.22),rgba(20,19,26,0.08)_60%,transparent)] blur-[6px] ${className}`}
+  />
+);
+
+export const PhoneWithHeadset = ({ phone }) => (
+  <div className="relative isolate pr-[16%] pb-[14%]">
+    {/* under the phone, and under the headset */}
+    <FloorShadow className="left-[3%] right-[14%] top-[66%] h-[14%]" />
+    <FloorShadow className="right-[1%] w-[42%] bottom-[-6%] h-[16%]" />
+    <Phone landscape>{phone}</Phone>
+    <img
+      src={asset("devices/quest-3.webp")}
+      alt=""
+      width="483"
+      height="301"
+      draggable="false"
+      className="absolute right-0 bottom-0 w-[44%] h-auto pointer-events-none select-none"
+    />
+  </div>
+);
+
 // Two phones side by side, the first raised slightly.
 export const Pair = ({ first, second }) => (
   <div className="flex gap-[6%] justify-center items-end px-[10%]">

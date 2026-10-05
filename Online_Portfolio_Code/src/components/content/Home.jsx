@@ -34,7 +34,7 @@ export const Home = () => {
 
       {/* Statement */}
       <h1
-        className="animate-rise [animation-delay:.12s] text-[clamp(2rem,5.4vw,4.25rem)] leading-[1.06] tracking-[-.028em] font-normal max-w-[19ch] text-balance mt-[clamp(72px,13vw,168px)]"
+        className="animate-rise [animation-delay:.12s] text-[clamp(2rem,5.4vw,4.25rem)] leading-[1.06] tracking-[-.028em] font-normal max-w-[19ch] text-balance mt-[clamp(52px,9vw,120px)]"
       >
         Phoebe Lee designs user experiences and builds the apps behind them.{" "}
         <span className="block text-text-3">
