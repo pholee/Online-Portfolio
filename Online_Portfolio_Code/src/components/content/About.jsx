@@ -68,7 +68,7 @@ export const About = () => {
               href={link.href}
               target="_blank"
               rel="noreferrer"
-              className="group hover:text-accent transition-colors"
+              className="group hover:text-text-1 transition-colors"
             >
               {link.label}{" "}
               <span className="inline-block transition-transform duration-300 group-hover:translate-x-[.15em] group-hover:-translate-y-[.15em]">

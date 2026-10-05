@@ -77,9 +77,12 @@ export const CaseStudy = () => {
               href={project.linkHref}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex gap-[.4em] border-b border-line pb-0.5 hover:border-text-1 transition-colors"
+              className="group inline-flex gap-[.4em] text-text-2 hover:text-text-1 transition-colors"
             >
-              {project.linkLabel} ↗
+              {project.linkLabel}
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-[.15em] group-hover:-translate-y-[.15em]">
+                ↗
+              </span>
             </a>
           )}
         </div>
@@ -104,13 +107,19 @@ export const CaseStudy = () => {
         {next ? (
           <>
             <span className="text-text-3">Next</span>
-            <Link to={`/work/${next.slug}`} className="hover:text-accent transition-colors">
-              {next.title} →
+            <Link to={`/work/${next.slug}`} className="group text-text-2 hover:text-text-1 transition-colors">
+              {next.title}{" "}
+              <span className="inline-block transition-transform duration-300 group-hover:translate-x-[.25em]">
+                →
+              </span>
             </Link>
           </>
         ) : (
-          <Link to="/" className="ml-auto hover:text-accent transition-colors">
-            Back to home →
+          <Link to="/" className="group ml-auto text-text-2 hover:text-text-1 transition-colors">
+            Back to home{" "}
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-[.25em]">
+              →
+            </span>
           </Link>
         )}
       </div>

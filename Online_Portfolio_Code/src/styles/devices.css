@@ -3,8 +3,6 @@
    scale with the device rather than the viewport. */
 
 /* ---------- Devices ---------- */
-.device{transition:transform .5s cubic-bezier(.2,.7,.2,1)}
-.device-stage:hover .device,.device-stage:focus-visible .device{transform:translateY(-6px)}
 .laptop{width:100%;padding-inline:5.4%}
 .lid{background:var(--bezel);border-radius:2.2% 2.2% 0 0/3.4% 3.4% 0 0;padding:2.1% 2.1% 2.6%;box-shadow:0 0 0 1px var(--alu-3) inset}
 .screen{aspect-ratio:16/10;overflow:hidden;position:relative;container-type:inline-size;background:#fff;border-radius:2px}
@@ -172,5 +170,5 @@
 .a-redact em{font:500 6cqw/1 var(--font-mono);font-style:normal;letter-spacing:.2em;background:#C8322B;color:#fff;padding:2.4cqw 4cqw;transform:rotate(-8deg)}
 
 @media (prefers-reduced-motion:reduce){
-  .device,.thumb-img>*{transition:none}
+  .thumb-img>*{transition:none}
 }

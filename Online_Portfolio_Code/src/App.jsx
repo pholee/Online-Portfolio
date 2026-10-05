@@ -1,5 +1,3 @@
-import "./App.css";
-import "./index.css";
 import Lenis from "lenis";
 import { useEffect, useRef } from "react";
 import { Routes, Route, useLocation } from "react-router";
@@ -56,22 +54,22 @@ function App() {
   const lenisRef = useRef(null);
   const location = useLocation();
 
-  {/* Smooth scrolling */}
-  useEffect( () => {
-    const lenis = new Lenis({ autoRaf: true })
-    lenisRef.current = lenis
+  // Smooth scrolling
+  useEffect(() => {
+    const lenis = new Lenis({ autoRaf: true });
+    lenisRef.current = lenis;
 
     return () => {
-      lenis.destroy()
-      lenisRef.current = null
-    }
-  }, [])
+      lenis.destroy();
+      lenisRef.current = null;
+    };
+  }, []);
 
-  {/* Reset scroll on route change — Lenis keeps its own scroll position, so a
-      plain window.scrollTo(0,0) gets fought/overridden on the next frame unless
-      Lenis itself is told to reset. Keyed on pathname only (not all of location)
-      so returning to MainPage with a project to scroll to (location.state)
-      isn't also forced back to the top first. */}
+  // Reset scroll on route change — Lenis keeps its own scroll position, so a
+  // plain window.scrollTo(0,0) gets fought/overridden on the next frame unless
+  // Lenis itself is told to reset. Keyed on pathname only (not all of location)
+  // so returning to MainPage with a project to scroll to (location.state)
+  // isn't also forced back to the top first.
   useEffect(() => {
     if (location.state?.scrollTo) return;
     lenisRef.current?.scrollTo(0, { immediate: true });

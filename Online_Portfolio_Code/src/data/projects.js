@@ -32,8 +32,6 @@ export const projects = [
     projectType: "Web development",
     year: "2025",
     tools: ["Figma", "Wireframing", "React"],
-    linkLabel: null,
-    linkHref: null,
     teaser:
       "A personalised onboarding experience for new Koffeecup employees, from early wireframes to a working React build.",
     intro:
@@ -87,7 +85,7 @@ export const projects = [
     year: "2025",
     tools: ["Java", "CityEngine"],
     linkLabel: "View on GitHub",
-    linkHref: "https://github.com/pholee/CityEngine-2D-Game",
+    linkHref: "https://github.com/pholee/2D-Platformer-Game",
     intro:
       "A small, story-driven platformer retelling Little Red Riding Hood, built solo in Java. The brief was self-imposed: ship one complete, playable level with its own art direction rather than a tech demo.",
     sectionHeading: "Designing a level like a scene",
@@ -104,8 +102,6 @@ export const projects = [
     projectType: "Web development",
     year: "2027",
     tools: ["React", "Tailwind CSS", "Figma"],
-    linkLabel: null,
-    linkHref: null,
     intro: "Coming soon.",
     sectionHeading: "From paper to product",
     sectionText: "An artist's portfolio, built to fit their style.",

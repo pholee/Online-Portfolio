@@ -22,13 +22,9 @@ export const Projects = () => {
                 : "min-[820px]:grid-cols-[minmax(0,7fr)_minmax(0,5fr)]"
             }`}
           >
-            <Link
-              to={`/work/${project.slug}`}
-              aria-label={`Open ${project.title}`}
-              className={`device-stage block min-w-0 ${flip ? "min-[820px]:order-2" : ""}`}
-            >
+            <div className={`min-w-0 ${flip ? "min-[820px]:order-2" : ""}`}>
               <ProjectDevice device={project.device} />
-            </Link>
+            </div>
 
             <div className="max-w-[30rem]">
               <h2 className="text-[clamp(1.6rem,2.8vw,2.25rem)] leading-[1.1] tracking-[-.02em] font-normal mb-[.35em]">

@@ -34,6 +34,9 @@ html, body {
   background: var(--color-background);
   color: var(--color-text-1);
   -webkit-font-smoothing: antialiased;
+  /* Plain arrow over text instead of the I-beam; links and buttons still
+     set their own pointer cursor. */
+  cursor: default;
 }
 
 :focus-visible {

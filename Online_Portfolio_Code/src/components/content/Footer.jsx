@@ -19,7 +19,7 @@ export const Footer = () => {
           onClick={() => scrollTo("#home")}
           className="relative isolate overflow-hidden cursor-pointer rounded-full border border-text-1 px-[1.1em] py-[.6em] leading-none text-text-1 transition-colors duration-300 hover:text-background focus-visible:text-background before:absolute before:inset-0 before:-z-10 before:bg-text-1 before:origin-bottom before:scale-y-0 before:transition-transform before:duration-300 before:ease-out hover:before:scale-y-100 focus-visible:before:scale-y-100"
         >
-          Back to top ↑
+          Back to top
         </button>
       </span>
     </footer>
