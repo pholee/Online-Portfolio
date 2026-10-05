@@ -7,30 +7,13 @@
   `thumb`, the square artwork used in the archive grid.
 */
 export const projects = [
-  /*
-    {
-    slug: "seven-yanbu",
-    title: "REDACTED",
-    isSoon: true,
-    projectType: "Experiential",
-    year: "2027",
-    tools: ["Figma", "Wireframing"],
-    linkLabel: null,
-    linkHref: null,
-    intro:
-      "Coming soon.",
-    sectionHeading: "The ocean at your fingertips",
-    sectionText:
-      "Quote",
-    },
-  */
 
   // ---------- Featured ----------
   {
     slug: "koffeekickstart-net",
     title: "koffeekickstart.net",
     projectType: "Web development",
-    year: "2025",
+    year: "2026",
     tools: ["Figma", "Wireframing", "React"],
     teaser:
       "A personalised onboarding experience for new Koffeecup employees, from early wireframes to a working React build.",
@@ -62,7 +45,7 @@ export const projects = [
     slug: "this-portfolio",
     title: "This Portfolio",
     projectType: "Web development",
-    year: "2026",
+    year: "2024",
     tools: ["React", "Tailwind CSS", "Figma"],
     linkLabel: "View on GitHub",
     linkHref: "https://github.com/pholee/Online-Portfolio",
@@ -82,7 +65,7 @@ export const projects = [
     archive: true,
     title: "2D Platformer Game",
     projectType: "Game development",
-    year: "2025",
+    year: "2024",
     tools: ["Java", "CityEngine"],
     linkLabel: "View on GitHub",
     linkHref: "https://github.com/pholee/2D-Platformer-Game",
@@ -127,7 +110,7 @@ export const projects = [
     archive: true,
     title: "Interior Designer",
     projectType: "User experience",
-    year: "2025",
+    year: "2026",
     tools: ["Figma", "Wireframing"],
     intro:
       "Placeholder — add a one or two sentence summary of Interior Designer here.",
@@ -159,7 +142,7 @@ export const projects = [
     year: "2027",
     tools: ["Figma", "Wireframing"],
     intro: "Placeholder — add a one or two sentence summary of Redacted here.",
-    sectionHeading: "Placeholder — Redacted headline",
+    sectionHeading: "The ocean at your fingertips",
     sectionText:
       "Placeholder — add the story of Redacted: the problem, what you designed, and what changed because of it.",
     device: "redacted",
