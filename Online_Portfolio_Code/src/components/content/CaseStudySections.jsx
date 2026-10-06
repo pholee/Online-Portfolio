@@ -81,6 +81,7 @@ const FullSizeLink = ({ href }) => (
 );
 
 const widths = {
+  small: "max-w-[280px]",
   phone: "max-w-[360px]",
   narrow: "max-w-[720px]",
   wide: "max-w-full",
@@ -102,7 +103,7 @@ const blocks = {
     </div>
   ),
 
-  // size: "wide" (default), "narrow", or "phone" for portrait screens/video. fullSrc adds an "Open full size" link
+  // size: "wide" (default), "narrow", "phone" for portrait screens/video, or "small". fullSrc adds an "Open full size" link
   // for detailed diagrams.
   image: ({ size = "wide", caption, fullSrc, ...item }) => (
     <figure className={`w-full ${widths[size]}`}>
@@ -186,6 +187,39 @@ const blocks = {
       </div>
       <Caption>
         {caption ? `${caption} · ` : ""}Scroll sideways
+        {fullSrc && (
+          <>
+            {" · "}
+            <FullSizeLink href={fullSrc} />
+          </>
+        )}
+      </Caption>
+    </figure>
+  ),
+
+  // Tall full-page designs (wireframes, long pages): shown in a fixed-height
+  // frame that scrolls vertically. data-lenis-prevent lets the mouse wheel
+  // scroll the frame instead of the page's smooth scroller.
+  page: ({ size = "narrow", caption, fullSrc, ...item }) => (
+    <figure className={`w-full ${widths[size]}`}>
+      <div
+        data-lenis-prevent
+        tabIndex={0}
+        aria-label={`${item.alt} — scroll to see the whole page`}
+        className={`${size === "small" ? "max-h-[min(60vh,480px)]" : "max-h-[clamp(420px,72vh,760px)]"} overflow-y-auto overscroll-contain rounded-[4px] border border-line bg-line`}
+      >
+        <img
+          src={asset(item.src)}
+          alt={item.alt}
+          width={item.width}
+          height={item.height}
+          loading="lazy"
+          decoding="async"
+          className="block w-full h-auto"
+        />
+      </div>
+      <Caption>
+        {caption ? `${caption} · ` : ""}Scroll to see the whole page
         {fullSrc && (
           <>
             {" · "}

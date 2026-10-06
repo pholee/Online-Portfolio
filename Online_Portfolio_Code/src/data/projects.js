@@ -13,13 +13,15 @@
     { type: "heading", text }
     { type: "text", text }                 one paragraph, or [paragraph, …]
     { type: "list", items: [text, …] }     bullet points
-    { type: "image", src, alt, width, height, caption?, size?: "wide" | "narrow" | "phone",
+    { type: "image", src, alt, width, height, caption?, size?: "wide" | "narrow" | "phone" | "small",
       fullSrc? }                           fullSrc adds an "Open full size" link
     { type: "gallery", items: [{ src, alt, width, height, label? }], caption? }
                                            one row at equal height
     { type: "compare", before: { …, label }, after: { …, label }, caption? }
     { type: "scroll", src, alt, width, height, caption?, fullSrc? }
                                            very wide diagrams, scrolled sideways
+    { type: "page", src, alt, width, height, caption?, fullSrc?, size? }
+                                           very tall pages, scrolled within a frame
     { type: "quote", text, attribution? }
 
   `width` / `height` are the file's pixel size (they keep the layout steady
@@ -96,7 +98,7 @@ export const projects = [
         type: "text",
         text: [
           "Hoomanz is a short, cosy puzzle platformer in which players control Shoo, a small creature shooing away the hoomanz invading their planet. For the game's launch, Koffeecup asked me to redesign hoomanz.game: adding launch links, new information about the game including trailers, and space for community events.",
-          "The existing site had difficult navigation and didn't adapt to mobile screens, so the redesign started from both.",
+          "To promote the game at Gamescom 2025, Koffeecup hosted a character design competition so I also designed the embedded web-app for scanning a colloured character sheet.",
         ],
       },
       { type: "heading", text: "Navigation that works on every screen" },
@@ -104,6 +106,16 @@ export const projects = [
         type: "text",
         text:
           "I introduced a new navigation header and designed the layout responsively from the start, working closely with two developers and iterating back and forth to resolve the details at each screen size. The launch links point players to all six storefronts: Steam, PlayStation 5, Xbox, Nintendo Switch, the Epic Games Store and macOS.",
+      },
+      {
+        type: "page",
+        src: "work/hoomanz-game/wireframe-desktop.webp",
+        alt: "Desktop wireframe of the redesigned hoomanz.game homepage, from the navigation header and launch links through the trailer, game features and team section",
+        width: 1400,
+        height: 7990,
+        caption: "Desktop homepage wireframe",
+        size: "small",
+        fullSrc: "work/hoomanz-game/wireframe-desktop-full.webp",
       },
       {
         type: "text",
@@ -115,7 +127,7 @@ export const projects = [
         type: "text",
         text: [
           "To build hype for launch, Koffeecup ran a competition at Gamescom 2025 inviting visitors to design their own version of Shoo, with the winning design added to the game as an unlockable outfit.",
-          "To open the competition to players beyond the event, I designed an embedded web app on hoomanz.game that let anyone take part from home:",
+          "To build a repository of skins for easy judging, I designed an embedded web app on hoomanz.game that let anyone take part at Gamsecom or from home:",
         ],
       },
       {
@@ -127,11 +139,41 @@ export const projects = [
           "Preview it on a 3D model of Shoo before submitting.",
         ],
       },
+      {
+        type: "gallery",
+        items: [
+          {
+            src: "work/hoomanz-game/gamescom-scanning.webp",
+            alt: "A visitor at Gamescom 2025 holding a coloured-in Hoomanz character sheet and scanning it with their phone",
+            width: 2000,
+            height: 1125,
+            label: "Scanning a character sheet at Gamescom 2025",
+          },
+          {
+            src: "work/hoomanz-game/shoo-app.mp4",
+            alt: "The hoomanz.game web app on a phone, capturing a coloured-in Shoo character sheet",
+            width: 720,
+            height: 720,
+            loop: true,
+            label: "Instructional video",
+          },
+        ],
+      },
       { type: "heading", text: "Working within constraints" },
       {
         type: "text",
         text:
           "I proposed giving community events and competitions their own tabs, so they could grow independently of the launch content. Time and budget didn't allow it, so they live in a dedicated section on the homepage instead.",
+      },
+      {
+        type: "page",
+        src: "work/hoomanz-game/wireframe-community.webp",
+        alt: "Wireframe of a dedicated Community page with a Discord link, the scare count, community-made skins, speedruns and the blog",
+        width: 1400,
+        height: 4238,
+        caption: "Community page wireframe",
+        size: "small",
+        fullSrc: "work/hoomanz-game/wireframe-community-full.webp",
       },
       { type: "heading", text: "The outcome" },
       {
