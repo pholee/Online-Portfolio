@@ -285,39 +285,30 @@ export const projects = [
   },
 
   // ---------- Archive ----------
+   /*
   {
-    slug: "this-portfolio",
+    slug: "redacted",
     archive: true,
-    title: "This Portfolio",
-    projectType: "Web development",
-    year: "2024",
-    tools: ["React", "Tailwind CSS", "Figma"],
-    linkLabel: "View on GitHub",
-    linkHref: "https://github.com/pholee/Online-Portfolio",
-    intro:
-      "A ground-up rebuild of this site: fewer components, one consistent accent system, and a lot more negative space. Every section pulls from the same small set of tokens rather than being styled screen by screen.",
+    title: "Redacted",
+    projectType: "Experiential",
+    year: "2027",
+    tools: ["Figma", "Wireframing"],
+    intro: "Placeholder — add a one or two sentence summary of Redacted here.",
     sections: [
+      {
+        type: "heading",
+        text: "The ocean at your fingertips",
+      },
+      {
+        type: "text",
+        text: "Placeholder — add the story of Redacted: the problem, what you designed, and what changed because of it.",
+      },
     ],
-    device: "portfolio",
-    thumb: "work/this-portfolio/thumb.webp",
+    device: "redacted",
+    thumb: "redacted",
   },
-  {
-    slug: "2d-platformer-game",
-    archive: true,
-    title: "2D Platformer Game",
-    projectType: "Game development",
-    year: "2024",
-    tools: ["Java", "CityEngine"],
-    linkLabel: "View on GitHub",
-    linkHref: "https://github.com/pholee/2D-Platformer-Game",
-    intro:
-      "A small, story-driven platformer retelling Little Red Riding Hood, built solo in Java. The brief was self-imposed: ship one complete, playable level with its own art direction rather than a tech demo.",
-    sections: [
-    ],
-    device: "platformer",
-    thumb: "work/2d-platformer-game/thumb.webp",
-  },
-  /*
+  */
+   /*
   {
     slug: "alia-lavery-com",
     archive: true,
@@ -341,7 +332,7 @@ export const projects = [
     thumb: "moodboard",
   },
   */
-  {
+    {
     slug: "interior-designer",
     archive: true,
     title: "Interior Designer",
@@ -441,29 +432,38 @@ export const projects = [
     device: "interior",
     thumb: "work/interior-designer/thumb.webp",
   },
-  /*
-  {
-    slug: "redacted",
+    {
+    slug: "2d-platformer-game",
     archive: true,
-    title: "Redacted",
-    projectType: "Experiential",
-    year: "2027",
-    tools: ["Figma", "Wireframing"],
-    intro: "Placeholder — add a one or two sentence summary of Redacted here.",
+    title: "2D Platformer Game",
+    projectType: "Game development",
+    year: "2024",
+    tools: ["Java", "CityEngine"],
+    linkLabel: "View on GitHub",
+    linkHref: "https://github.com/pholee/2D-Platformer-Game",
+    intro:
+      "A small, story-driven platformer retelling Little Red Riding Hood, built solo in Java. The brief was self-imposed: ship one complete, playable level with its own art direction rather than a tech demo.",
     sections: [
-      {
-        type: "heading",
-        text: "The ocean at your fingertips",
-      },
-      {
-        type: "text",
-        text: "Placeholder — add the story of Redacted: the problem, what you designed, and what changed because of it.",
-      },
     ],
-    device: "redacted",
-    thumb: "redacted",
+    device: "platformer",
+    thumb: "work/2d-platformer-game/thumb.webp",
   },
-  */
+  {
+    slug: "this-portfolio",
+    archive: true,
+    title: "This Portfolio",
+    projectType: "Web development",
+    year: "2024",
+    tools: ["React", "Tailwind CSS", "Figma"],
+    linkLabel: "View on GitHub",
+    linkHref: "https://github.com/pholee/Online-Portfolio",
+    intro:
+      "A ground-up rebuild of this site: fewer components, one consistent accent system, and a lot more negative space. Every section pulls from the same small set of tokens rather than being styled screen by screen.",
+    sections: [
+    ],
+    device: "portfolio",
+    thumb: "work/this-portfolio/thumb.webp",
+  },
 ];
 
 export const featuredProjects = projects.filter((project) => !project.archive);
