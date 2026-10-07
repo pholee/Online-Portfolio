@@ -1,4 +1,3 @@
-import { Logo } from "../Logo";
 import { useScrollNav } from "../../hooks/useScrollNav";
 
 export const Footer = () => {

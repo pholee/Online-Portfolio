@@ -9,12 +9,13 @@ export const CaseStudy = () => {
   const navigate = useNavigate();
   const project = getProjectBySlug(slug);
 
-  // Back lands on this project's row / thumbnail, not the top of the page.
-  const goBack = () => navigate("/", { state: { scrollTo: `#${slug}` } });
+  // Back returns to exactly where the visitor was on the homepage (or this
+  // project's row, if they arrived here directly).
+  const goBack = () => navigate("/", { state: { scrollTo: `#${slug}`, restoreScroll: true } });
 
   useEffect(() => {
     const handleKeyDown = (e) => {
-      if (e.key === "Escape") navigate("/", { state: { scrollTo: `#${slug}` } });
+      if (e.key === "Escape") navigate("/", { state: { scrollTo: `#${slug}`, restoreScroll: true } });
     };
     window.addEventListener("keydown", handleKeyDown);
     return () => window.removeEventListener("keydown", handleKeyDown);
