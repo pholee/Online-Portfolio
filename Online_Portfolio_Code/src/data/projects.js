@@ -581,6 +581,7 @@ export const projects = [
     device: "platformer",
     thumb: "work/2d-platformer-game/thumb.webp",
   },
+  /*
   {
     slug: "this-portfolio",
     archive: true,
@@ -607,6 +608,7 @@ export const projects = [
     device: "portfolio",
     thumb: "work/this-portfolio/thumb.webp",
   },
+  */
 ];
 
 export const featuredProjects = projects.filter((project) => !project.archive);
