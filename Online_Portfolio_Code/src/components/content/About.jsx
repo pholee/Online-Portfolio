@@ -3,7 +3,7 @@ const workExperience = [
     title: "UX Designer, Koffeecup",
     description:
       "Wireframes and user flows for websites, experiential projects, mobile and VR games.",
-    period: "Aug 2025 — now",
+    period: "Sept 2025 — now",
   },
   {
     title: "UX Design Intern, Koffeecup",

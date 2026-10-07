@@ -230,6 +230,28 @@ const blocks = {
     </figure>
   ),
 
+  // "My role" / "Results" summary at the top of a case study: two short
+  // labelled lists side by side.
+  summary: ({ role, results }) => (
+    <div className="w-full grid grid-cols-1 min-[620px]:grid-cols-2 gap-x-[clamp(32px,6vw,96px)] gap-y-8 border-y border-line py-[clamp(24px,3vw,36px)]">
+      {[
+        ["My role", role],
+        ["Results", results],
+      ]
+        .filter(([, items]) => items?.length)
+        .map(([label, items]) => (
+          <div key={label}>
+            <div className="font-mono text-[.7rem] tracking-[.06em] uppercase text-text-3 mb-3">{label}</div>
+            <ul className="grid gap-1.5 text-text-1 text-[1rem] leading-[1.45]">
+              {items.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
+        ))}
+    </div>
+  ),
+
   list: ({ items }) => (
     <ul className="grid gap-3 max-w-[60ch] text-text-2 text-[1.1rem] list-disc pl-[1.2em] marker:text-text-3">
       {items.map((item, i) => (
@@ -246,7 +268,7 @@ const blocks = {
         “{text}”
       </p>
       {attribution && (
-        <footer className="mt-3 font-mono text-[.74rem] text-text-3">— {attribution}</footer>
+        <footer className="mt-3 font-mono text-[.74rem] text-text-3">- {attribution}</footer>
       )}
     </blockquote>
   ),
