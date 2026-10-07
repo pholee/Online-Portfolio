@@ -32,85 +32,6 @@ export const projects = [
 
   // ---------- Featured ----------
   {
-    slug: "koffeekickstart-net",
-    title: "koffeekickstart.net",
-    projectType: "Web development",
-    year: "2026",
-    tools: ["Figma", "Wireframing", "React"],
-    teaser:
-      "An in-house onboarding platform I designed and built for Koffeecup, giving every new hire the same start.",
-    intro:
-      "Koffeecup is an interactive studio of 50+ people working across the UK, Poland and France. I designed and built koffeekickstart.net, an onboarding platform that gave every new hire the same start, whichever team they joined.",
-    sections: [
-      {
-        type: "summary",
-        role: [
-          "Ran discovery research with recent hires.",
-          "Designed the wireframes and UI in Figma.",
-          "Built the site in React, integrated with Notion, HiBob and Google.",
-        ],
-        results: [
-          "Every new starter followed one onboarding path, across three countries.",
-          "HR was notified automatically whenever onboarding was completed.",
-        ],
-      },
-      { type: "heading", text: "A new starter's first month depended on which team they joined" },
-      {
-        type: "text",
-        text: [
-          "Koffeecup had a known problem with staff turnover, with 30% of new hires leaving within their first month. Onboarding had never been standardised - each department lead was trusted to run their own, so what a new starter learnt, and when, varied from team to team.",
-          "HR asked me to design and build an in-house platform to support new hires. It needed to bring onboarding into one place - introducing past products, setting out the logins and tech each person needed, and pointing people to their department's tutorials - while feeling branded and stylish enough to reflect the studio. Integration with Notion, HiBob and Google was a must, so the company could pull all of its information together.",
-        ],
-      },
-      { type: "heading", text: "Starting with the people it was for" },
-      {
-        type: "text",
-        text:
-          "Before designing anything, I ran a short survey with four recent hires, asking what they wished they'd had in their first weeks. With such a small sample, it served as a quick discovery step rather than conclusive research - given more time, I would have followed up with interviews in each department and country. Even so, three needs came up consistently:",
-      },
-      {
-        type: "list",
-        items: [
-          "A single onboarding checklist, so tasks could be tracked in one place rather than pieced together from emails and Slack messages.",
-          "A clear reading list from Notion, so new starters knew which of Koffeecup's hundreds of documents were relevant to them.",
-          "A way to get to know their teammates - who they would be working with, and who was nearby, in a company spread across three countries.",
-        ],
-      },
-      { type: "heading", text: "Each need became a page" },
-      {
-        type: "text",
-        text: [
-          "Building on the survey, I turned each need into its own page - Checklist, Documents and Team - alongside an HR page holding each new starter's personal details, role and office.",
-          "HR's brief only asked for an onboarding website with integration, so the structure, design and build were my own decisions. I wireframed the site in Figma before building it in React, connecting it to Notion, HiBob and Google so it drew on the systems the company already used. HR reviewed the platform as it came together.",
-        ],
-      },
-      { type: "heading", text: "The outcome" },
-      {
-        type: "text",
-        text: [
-          "All three needs from the survey shipped as pages on the platform. As a result, every new starter followed the same onboarding path, and HR received an email whenever someone completed it - giving them visibility of every step along the way.",
-          "When I presented the platform to my line manager, they described the integration as beyond expectation and said they were looking forward to using it.",
-        ],
-      },
-      { type: "heading", text: "What I'd measure" },
-      {
-        type: "text",
-        text:
-          "The platform had not been running long enough to measure its impact. To judge whether it worked, I would track:",
-      },
-      {
-        type: "list",
-        items: [
-          "First-month turnover, against the 30% of new hires who were leaving before the platform existed.",
-          "Checklist completion rate - how many new starters finished every task.",
-          "Time to complete onboarding, from first login to the final checklist item.",
-          "A short survey at the end of each new starter's first month, repeating the discovery questions to see whether the original needs had been met.",
-        ],
-      },
-    ],
-    device: "koffee",
-  },
-  {
     slug: "hoomanz-game",
     title: "hoomanz.game",
     projectType: "User experience",
@@ -234,9 +155,9 @@ export const projects = [
     ],
     device: "hoomanz",
   },
-
   {
     slug: "star-city",
+    archive: false,
     title: "Star City",
     projectType: "User experience",
     year: "2025",
@@ -257,7 +178,7 @@ export const projects = [
         ],
         results: [
           "Star City is live on mobile on Meta Horizon Worlds.",
-          "Players aged 14-16 voted its environment the most visually appealing and easiest to understand, against around five top-performing games on the platform.",
+          "In a playtest with ~10 players aged 14–16, it was voted the most visually appealing and easiest to understand, against ~5 top-performing games on the platform.",
         ],
       },
       {
@@ -369,65 +290,146 @@ export const projects = [
       },
     ],
     device: "starCity",
+    thumb: "work/star-city/thumb.webp",
   },
-
-  // ---------- Archive ----------
-   /*
-  {
-    slug: "redacted",
-    archive: true,
-    title: "Redacted",
-    projectType: "Experiential",
-    year: "2027",
-    tools: ["Figma", "Wireframing"],
-    intro: "Placeholder - add a one or two sentence summary of Redacted here.",
-    sections: [
-      {
-        type: "heading",
-        text: "The ocean at your fingertips",
-      },
-      {
-        type: "text",
-        text: "Placeholder - add the story of Redacted: the problem, what you designed, and what changed because of it.",
-      },
-    ],
-    device: "redacted",
-    thumb: "redacted",
-  },
-  */
-   /*
-  {
-    slug: "alia-lavery-com",
-    archive: true,
-    isSoon: true,
-    title: "AliaLavery.com",
-    projectType: "Web development",
-    year: "2027",
-    tools: ["React", "Tailwind CSS", "Figma"],
-    intro: "Coming soon.",
-    sections: [
-      {
-        type: "heading",
-        text: "From paper to product",
-      },
-      {
-        type: "text",
-        text: "An artist's portfolio, built to fit their style.",
-      },
-    ],
-    device: "alia",
-    thumb: "moodboard",
-  },
-  */
     {
+    slug: "koffeekickstart-net",
+    title: "koffeekickstart.net",
+    projectType: "Web development",
+    year: "2026",
+    tools: ["Figma", "Wireframing", "React"],
+    teaser:
+      "An in-house onboarding platform I designed and built for Koffeecup, giving every new hire the same start.",
+    intro:
+      "Koffeecup is an interactive studio of 50+ people working across the UK, Poland and France. I designed and built koffeekickstart.net, an onboarding platform that gave every new hire the same start, whichever team they joined.",
+    sections: [
+      {
+        type: "summary",
+        role: [
+          "Ran discovery research with recent hires.",
+          "Designed the wireframes and UI in Figma.",
+          "Built the site in React, integrated with Notion, HiBob and Google.",
+        ],
+        results: [
+          "Every new starter followed one onboarding path, across three countries.",
+          "HR was notified automatically whenever onboarding was completed.",
+        ],
+      },
+      { type: "heading", text: "A new starter's first month depended on which team they joined" },
+      {
+        type: "text",
+        text: [
+          "Koffeecup had a known problem with staff turnover, with 30% of new hires leaving within their first month. Onboarding had never been standardised - each department lead was trusted to run their own, so what a new starter learnt, and when, varied from team to team.",
+          "HR asked me to design and build an in-house platform to support new hires. It needed to bring onboarding into one place - introducing past products, setting out the logins and tech each person needed, and pointing people to their department's tutorials - while feeling branded and stylish enough to reflect the studio. Integration with Notion, HiBob and Google was a must, so the company could pull all of its information together.",
+        ],
+      },
+      { type: "heading", text: "Starting with the people it was for" },
+      {
+        type: "text",
+        text:
+          "Before designing anything, I ran a short survey with four recent hires, asking what they wished they'd had in their first weeks. With such a small sample, it served as a quick discovery step rather than conclusive research - given more time, I would have followed up with interviews in each department and country. Even so, three needs came up consistently:",
+      },
+      {
+        type: "list",
+        items: [
+          "A single onboarding checklist, so tasks could be tracked in one place rather than pieced together from emails and Slack messages.",
+          "A clear reading list from Notion, so new starters knew which of Koffeecup's hundreds of documents were relevant to them.",
+          "A way to get to know their teammates - who they would be working with, and who was nearby, in a company spread across three countries.",
+        ],
+      },
+      { type: "heading", text: "Each need became a page" },
+      {
+        type: "text",
+        text: [
+          "Building on the survey, I turned each need into its own page - Checklist, Documents and Team - alongside an HR page holding each new starter's personal details, role and office.",
+          "HR's brief only asked for an onboarding website with integration, so the structure, design and build were my own decisions. I wireframed the site in Figma before building it in React, connecting it to Notion, HiBob and Google so it drew on the systems the company already used. HR reviewed the platform as it came together.",
+        ],
+      },
+      { type: "heading", text: "The outcome" },
+      {
+        type: "text",
+        text: [
+          "All three needs from the survey shipped as pages on the platform. As a result, every new starter followed the same onboarding path, and HR received an email whenever someone completed it - giving them visibility of every step along the way.",
+          "When I presented the platform to my line manager, they described the integration as beyond expectation and said they were looking forward to using it.",
+        ],
+      },
+      { type: "heading", text: "What I'd measure" },
+      {
+        type: "text",
+        text:
+          "The platform had not been running long enough to measure its impact. To judge whether it worked, I would track:",
+      },
+      {
+        type: "list",
+        items: [
+          "First-month turnover, against the 30% of new hires who were leaving before the platform existed.",
+          "Checklist completion rate - how many new starters finished every task.",
+          "Time to complete onboarding, from first login to the final checklist item.",
+          "A short survey at the end of each new starter's first month, repeating the discovery questions to see whether the original needs had been met.",
+        ],
+      },
+    ],
+    device: "koffee",
+  },
+  // ---------- Archive ----------
+  /*
+ {
+   slug: "redacted",
+   archive: true,
+   title: "Redacted",
+   projectType: "Experiential",
+   year: "2027",
+   tools: ["Figma", "Wireframing"],
+   intro: "Placeholder - add a one or two sentence summary of Redacted here.",
+   sections: [
+     {
+       type: "heading",
+       text: "The ocean at your fingertips",
+     },
+     {
+       type: "text",
+       text: "Placeholder - add the story of Redacted: the problem, what you designed, and what changed because of it.",
+     },
+   ],
+   device: "redacted",
+   thumb: "redacted",
+ },
+ */
+  /*
+ {
+   slug: "alia-lavery-com",
+   archive: true,
+   isSoon: true,
+   title: "AliaLavery.com",
+   projectType: "Web development",
+   year: "2027",
+   tools: ["React", "Tailwind CSS", "Figma"],
+   intro: "Coming soon.",
+   sections: [
+     {
+       type: "heading",
+       text: "From paper to product",
+     },
+     {
+       type: "text",
+       text: "An artist's portfolio, built to fit their style.",
+     },
+   ],
+   device: "alia",
+   thumb: "moodboard",
+ },
+ */
+  {
     slug: "interior-designer",
     archive: true,
     title: "Interior Designer",
     projectType: "User experience",
     year: "2026",
     tools: ["Figma", "Wireframing"],
+    teaser:
+      "A short decorating game on Meta Horizon Worlds that I designed from brief to final game, on a tight turnaround of around two months.",
     intro:
-      "Interior Designer is a short, 20-minute decorating game on Meta Horizon Worlds. Players earn furniture through a gacha-style system while decorating rooms for a cast of quirky clients. I was the main designer on the project.",
+      "Interior Designer is a short, 20-minute decorating game on Meta Horizon Worlds. Players earn furniture through a gacha-style system while decorating rooms for a cast of quirky clients.",
     sections: [
       {
         type: "summary",
@@ -554,7 +556,7 @@ export const projects = [
     device: "interior",
     thumb: "work/interior-designer/thumb.webp",
   },
-    {
+  {
     slug: "2d-platformer-game",
     archive: true,
     title: "2D Platformer Game",

@@ -39,8 +39,8 @@ const devices = {
   ),
   interior: () => (
     <Pair
-      first={<Screenshot src="work/interior-designer/screen-1.webp" alt="Interior Designer: a customer's brief" fit="blur" />}
-      second={<Screenshot src="work/interior-designer/screen-5.webp" alt="Interior Designer: the customer review" fit="blur" />}
+      first={<Screenshot src="work/interior-designer/screen-4.webp" alt="Interior Designer: unboxing new furniture" />}
+      second={<Screenshot src="work/interior-designer/screen-5.webp" alt="Interior Designer: a client's review" />}
     />
   ),
   redacted: () => (

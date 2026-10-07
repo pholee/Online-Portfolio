@@ -3,18 +3,18 @@ const workExperience = [
     title: "UX Designer, Koffeecup",
     description:
       "Wireframes and user flows for websites, experiential projects, mobile and VR games.",
-    period: "Sept 2025 — now",
+    period: "Sept 2025 — Sept 2026",
   },
   {
     title: "UX Design Intern, Koffeecup",
     description: "Shadowed senior designers and learnt the tools of the trade.",
-    period: "Jun — Aug 2025",
+    period: "Jun 2025 — Aug 2025",
   },
 ];
 
 const education = [
   {
-    title: "BSc Computer Science",
+    title: "BSc Computer Science (Hons)",
     description: "City St George's, University of London",
     period: "2024 — 2028",
   },
